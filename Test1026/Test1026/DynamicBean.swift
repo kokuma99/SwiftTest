@@ -11,10 +11,23 @@
 class DynamicBean : NSObject {
     var id = 0
     
-    var title: String?
+    var type: Int = 0
     
+    var typeId: Int = 0
+    
+    var mimeType: Int = 0
+    
+    var url: String?
+    var commentId: Int = 0
+    var location: String?
+    var openAccountId: Int = 0
+    var replyContent: String?
+    var lastReplyDynamicId: Int = 0
+    var replyDynamicId: Int = 0
     var content: String?
-    
+    var zan: Int = 0
+    var zanCount: Int = 0
+    var positive: Int = 0
     init(dict: [String : AnyObject]) {
         super.init()
         setValuesForKeysWithDictionary(dict)

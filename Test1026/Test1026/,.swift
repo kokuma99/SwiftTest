@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Alamofire
 
-typealias NetworkFinished = (success:Bool,result:String, error:NSError) -> ()
+typealias NetworkFinished = (success:Bool,result:JSON?, error:NSError?) -> ()
 
 class ViewController: UIViewController {
    
@@ -59,7 +59,21 @@ class ViewController: UIViewController {
         param["positive"] = 1
         param["page"] = 1
         param["perPage"] = 4
-        ViewController.loadData("/personalPlan", parameters: param)
+        ViewController.loadData("/personalPlan", parameters: param){(success,result,error) in
+            guard let result=result else {
+                return
+            }
+             let data = result["data"].arrayObject as! [[String : AnyObject]]
+                var grammars = [DynamicBean]()
+                
+                for dict in data {
+                    grammars.append(DynamicBean(dict: dict))
+                    print("\(grammars.last?.id)")
+                    print("\(grammars.last?.positive)")
+                }
+        }
+        
+                    //SVProgressHUD.show()
     }
     
     
@@ -76,14 +90,28 @@ class ViewController: UIViewController {
         return listV
     }()
     //,finished: NetworkFinished
-    class func loadData(url:String,parameters: [String : AnyObject]?){
+    class func loadData(url:String,parameters: [String : AnyObject]?,finished:NetworkFinished){
         Alamofire.request(.GET, "\(API_BASE_URL)\(url)",parameters: parameters).responseJSON { (response) -> Void in
             //do something
             print(response.debugDescription)
+            if let data = response.data{
+                let json = JSON(data: data)
+                finished(success: true,result: json,error: nil)
+            }else {
+                SVProgressHUD.showInfoWithStatus("您的网络不给力哦")
+                finished(success: false, result: nil, error: response.result.error)
+            }
+           // if let total = json["total"].int {
+           //     print("total-xxl-\(total)")
+           // }
             
+           // if let frontCover = json[["data",0,"acg","frontCover"]].string{
+            //    print("total-xxl-\(frontCover)")
+            //}
         }
 
     }
+    
     
 }
 

@@ -13,9 +13,8 @@ import Alamofire
 //typealias NetworkFinished = (success:Bool,result:JSON?, error:NSError?) -> ()
 
 class ViewController: UIViewController {
-    var grammars = [DynamicBean]()
-    
-    //外网
+   
+    //外网    
     override func viewDidLoad() {
         super.viewDidLoad()
        prepareUI1()
@@ -65,13 +64,13 @@ class ViewController: UIViewController {
                 return
             }
              let data = result["data"].arrayObject as! [[String : AnyObject]]
+                var grammars = [DynamicBean]()
+                
                 for dict in data {
-                    self.grammars.append(DynamicBean(dict: dict))
-                    print("\(self.grammars.last?.id)")
-                    print("\(self.grammars.last?.positive)")
+                    grammars.append(DynamicBean(dict: dict))
+                    print("\(grammars.last?.id)")
+                    print("\(grammars.last?.positive)")
                 }
-            self.listV.grammars=self.grammars;
-            self.listV.reloadData()
         }
         
                     //SVProgressHUD.show()

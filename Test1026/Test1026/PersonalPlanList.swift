@@ -11,7 +11,8 @@ import UIKit
 class PersonalPlanList: UITableView {
     
     /// 动弹模型数组
-    var grammars: [String] = ["nima","kengdie"]
+    var grammars = [DynamicBean]()
+    
     /// 动弹列表cell重用标识
     let grammarIdentifier = "grammarIdentifier"
     

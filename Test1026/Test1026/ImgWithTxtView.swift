@@ -10,12 +10,12 @@ import UIKit
 import SnapKit
 
 class ImgWithTxtView : UITableViewCell{
-    var grammar : String? {
+    var grammar : DynamicBean? {
         didSet {
             guard grammar != nil else {
                 return
             }
-            labelV.text = grammar
+            labelV.text = "\(grammar?.id)"
         }
     }
     

@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Alamofire
 
-typealias NetworkFinished = (success:Bool,result:JSON?, error:NSError?) -> ()
+//typealias NetworkFinished = (success:Bool,result:JSON?, error:NSError?) -> ()
 
 class ViewController: UIViewController {
    

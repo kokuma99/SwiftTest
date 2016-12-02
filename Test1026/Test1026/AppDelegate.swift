@@ -11,9 +11,29 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var networkState = 0
     var window: UIWindow?
-
+    /**
+     监听网络状态改变
+     */
+//    @objc func reachabilityChanged(notification: NSNotification) {
+//        
+//        guard let curReach = notification.object as? Reachability else {
+//            return
+//        }
+//        
+//        switch curReach.currentReachabilityStatus() {
+//        case NetworkStatus.NotReachable:
+//            print("无网络")
+//        case NetworkStatus.ReachableViaWiFi:
+//            networkState = 1
+//            print("WiFi")
+//        case NetworkStatus.ReachableViaWWAN:
+//            networkState = 2
+//            print("WAN")
+//        }
+    
+ //   }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

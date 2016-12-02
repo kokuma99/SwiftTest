@@ -28,6 +28,14 @@ class DynamicBean : NSObject {
     var zan: Int = 0
     var zanCount: Int = 0
     var positive: Int = 0
+    var display: Int = 0
+    var report: Int = 0
+    var tranCount: Int = 0
+    var commentCount: Int = 0
+    var planId: Int = 0
+    var venueName: String?
+    
+    
     init(dict: [String : AnyObject]) {
         super.init()
         setValuesForKeysWithDictionary(dict)

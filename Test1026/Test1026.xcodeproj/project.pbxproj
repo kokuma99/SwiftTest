@@ -22,6 +22,17 @@
 		29822EE61DCEF28100495220 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29822EE51DCEF28100495220 /* Api.swift */; };
 		29822EF61DD21C6B00495220 /* View1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29822EF51DD21C6B00495220 /* View1.xib */; };
 		29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29822EF71DD21D0300495220 /* PersonalPlanList.swift */; };
+		29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62081DF1A80D00FF9F07 /* AcgBean.swift */; };
+		29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62191DF1ABFC00FF9F07 /* Config.swift */; };
+		29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */; };
+		29CC62241DF1AD4700FF9F07 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621D1DF1AD4700FF9F07 /* NSDateExtension.swift */; };
+		29CC62251DF1AD4700FF9F07 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621E1DF1AD4700FF9F07 /* StringExtension.swift */; };
+		29CC62261DF1AD4700FF9F07 /* UIBarButtionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621F1DF1AD4700FF9F07 /* UIBarButtionItem.swift */; };
+		29CC62271DF1AD4700FF9F07 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62201DF1AD4700FF9F07 /* UIColorExtension.swift */; };
+		29CC62281DF1AD4700FF9F07 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62211DF1AD4700FF9F07 /* UIImageExtension.swift */; };
+		29CC62291DF1AD4700FF9F07 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62221DF1AD4700FF9F07 /* UIViewExtension.swift */; };
+		29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC622A1DF1B07A00FF9F07 /* NetUtils.swift */; };
+		29CC622D1DF1B96D00FF9F07 /* HotSearchBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC622C1DF1B96D00FF9F07 /* HotSearchBean.swift */; };
 		29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0883D1DEDC7B600767BEE /* OcFile.m */; };
 		29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E088581DEDD02B00767BEE /* SVIndefiniteAnimatedView.m */; };
 		29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0885A1DEDD02B00767BEE /* SVProgressAnimatedView.m */; };
@@ -200,6 +211,17 @@
 		29822EE51DCEF28100495220 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		29822EF51DD21C6B00495220 /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View1.xib; sourceTree = "<group>"; };
 		29822EF71DD21D0300495220 /* PersonalPlanList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalPlanList.swift; sourceTree = "<group>"; };
+		29CC62081DF1A80D00FF9F07 /* AcgBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgBean.swift; sourceTree = "<group>"; };
+		29CC62191DF1ABFC00FF9F07 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
+		29CC621D1DF1AD4700FF9F07 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		29CC621E1DF1AD4700FF9F07 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		29CC621F1DF1AD4700FF9F07 /* UIBarButtionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtionItem.swift; sourceTree = "<group>"; };
+		29CC62201DF1AD4700FF9F07 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		29CC62211DF1AD4700FF9F07 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		29CC62221DF1AD4700FF9F07 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		29CC622A1DF1B07A00FF9F07 /* NetUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUtils.swift; sourceTree = "<group>"; };
+		29CC622C1DF1B96D00FF9F07 /* HotSearchBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSearchBean.swift; sourceTree = "<group>"; };
 		29E0883C1DEDC7B600767BEE /* Test1026-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test1026-Bridging-Header.h"; sourceTree = "<group>"; };
 		29E0883D1DEDC7B600767BEE /* OcFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcFile.m; sourceTree = "<group>"; };
 		29E088571DEDD02B00767BEE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -274,6 +296,7 @@
 		291486831DC0F21300C6DC4A /* Test1026 */ = {
 			isa = PBXGroup;
 			children = (
+				29CC621B1DF1AD0C00FF9F07 /* extensions */,
 				29E092EF1DEF1B2E00767BEE /* bean */,
 				29E092ED1DEEF3A500767BEE /* SwiftyJSON.swift */,
 				29E088561DEDD02B00767BEE /* SVProgressHUD */,
@@ -286,6 +309,8 @@
 				291486931DC0F21300C6DC4A /* Info.plist */,
 				2914868B1DC0F21300C6DC4A /* Test1026.xcdatamodeld */,
 				29822EE51DCEF28100495220 /* Api.swift */,
+				29CC62191DF1ABFC00FF9F07 /* Config.swift */,
+				29CC622A1DF1B07A00FF9F07 /* NetUtils.swift */,
 			);
 			path = Test1026;
 			sourceTree = "<group>";
@@ -345,6 +370,20 @@
 			name = baseView;
 			sourceTree = "<group>";
 		};
+		29CC621B1DF1AD0C00FF9F07 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */,
+				29CC621D1DF1AD4700FF9F07 /* NSDateExtension.swift */,
+				29CC621E1DF1AD4700FF9F07 /* StringExtension.swift */,
+				29CC621F1DF1AD4700FF9F07 /* UIBarButtionItem.swift */,
+				29CC62201DF1AD4700FF9F07 /* UIColorExtension.swift */,
+				29CC62211DF1AD4700FF9F07 /* UIImageExtension.swift */,
+				29CC62221DF1AD4700FF9F07 /* UIViewExtension.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
 		29E088561DEDD02B00767BEE /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +406,8 @@
 			isa = PBXGroup;
 			children = (
 				29E092F01DEF1B5E00767BEE /* DynamicBean.swift */,
+				29CC62081DF1A80D00FF9F07 /* AcgBean.swift */,
+				29CC622C1DF1B96D00FF9F07 /* HotSearchBean.swift */,
 			);
 			name = bean;
 			sourceTree = "<group>";
@@ -631,16 +672,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				291486871DC0F21300C6DC4A /* ,.swift in Sources */,
+				29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */,
 				29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */,
 				29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */,
 				29E092EE1DEEF3A500767BEE /* SwiftyJSON.swift in Sources */,
+				29CC622D1DF1B96D00FF9F07 /* HotSearchBean.swift in Sources */,
 				29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */,
+				29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */,
+				29CC62241DF1AD4700FF9F07 /* NSDateExtension.swift in Sources */,
 				29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */,
+				29CC62271DF1AD4700FF9F07 /* UIColorExtension.swift in Sources */,
 				2914868D1DC0F21300C6DC4A /* Test1026.xcdatamodeld in Sources */,
+				29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */,
 				29E088651DEDD02B00767BEE /* SVRadialGradientLayer.m in Sources */,
 				29822EE61DCEF28100495220 /* Api.swift in Sources */,
+				29CC62261DF1AD4700FF9F07 /* UIBarButtionItem.swift in Sources */,
 				291486851DC0F21300C6DC4A /* AppDelegate.swift in Sources */,
+				29CC62281DF1AD4700FF9F07 /* UIImageExtension.swift in Sources */,
 				29E088641DEDD02B00767BEE /* SVProgressHUD.m in Sources */,
+				29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */,
+				29CC62291DF1AD4700FF9F07 /* UIViewExtension.swift in Sources */,
+				29CC62251DF1AD4700FF9F07 /* StringExtension.swift in Sources */,
 				29E092F11DEF1B5E00767BEE /* DynamicBean.swift in Sources */,
 				29E632F61DDFF22100F97BD1 /* ImgWithTxtView.swift in Sources */,
 			);

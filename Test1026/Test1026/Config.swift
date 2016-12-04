@@ -16,7 +16,7 @@ let SCREEN_WIDTH = SCREEN_BOUNDS.width
 let SCREEN_HEIGHT = SCREEN_BOUNDS.height
 
 /// 全局边距
-let MARGIN: CGFloat = 15
+let MARGIN: CGFloat = 12
 
 /// 全局圆角
 let CORNER_RADIUS: CGFloat = 5
@@ -25,13 +25,37 @@ let CORNER_RADIUS: CGFloat = 5
 let GLOBAL_SHADOW_ALPHA: CGFloat = 0.5
 
 /// 视频列表的item的间距
-let LIST_ITEM_PADDING: CGFloat = 10
+let LIST_ITEM_PADDING: CGFloat = 6
 
-/// 首页列表的item宽度
-let LIST_ITEM_WIDTH: CGFloat = ((SCREEN_WIDTH - 3 * 10) / 2)
+/// item宽度，1列
+let LIST_ITEM_WIDTH1: CGFloat = ((SCREEN_WIDTH - 2 * 10) / 2)
 
-/// 首页列表的item的高度
-let LIST_ITEM_HEIGHT: CGFloat = (LIST_ITEM_WIDTH / 16 * 9 + 58)
+/// item宽度，2列
+let LIST_ITEM_WIDTH2: CGFloat = ((SCREEN_WIDTH - 3 * 10) / 2)
+
+/// item宽度，3列
+let LIST_ITEM_WIDTH3: CGFloat = ((SCREEN_WIDTH - 4 * 10) / 3)
+
+/// item的高度，1列,android 200dp,地点
+let LIST_ITEM_HEIGHT1_1: CGFloat = (SCREEN_HEIGHT * 0.37)
+
+/// item的高度，1列,android 156dp，
+let LIST_ITEM_HEIGHT1_2: CGFloat = (SCREEN_HEIGHT * 0.29)
+
+/// item的高度，2列
+let LIST_ITEM_HEIGHT2_1: CGFloat = LIST_ITEM_WIDTH2
+
+/// item的高度，2列
+let LIST_ITEM_HEIGHT2_2: CGFloat = (266 / 1080 * SCREEN_HEIGHT)
+
+/// item的高度，2列
+let LIST_ITEM_HEIGHT2_3: CGFloat = (LIST_ITEM_WIDTH2 / 16 * 9 + 58)
+
+/// item的高度，3列
+let LIST_ITEM_HEIGHT3_1: CGFloat = LIST_ITEM_WIDTH3
+
+/// item的高度，3列
+let LIST_ITEM_HEIGHT3_2: CGFloat =  (140 / 1080 * SCREEN_HEIGHT)
 
 /// 导航栏背景色 - 绿色
 let COLOR_NAV_BG = UIColor.colorWithHexString("41ca61")
@@ -53,6 +77,10 @@ let COLOR_NAV_ITEM_NORMAL = UIColor(red:0.95, green:0.98, blue:1.00, alpha:1.00)
 
 /// 导航栏ITEM高亮 - 偏白
 let COLOR_NAV_ITEM_HIGH = UIColor(red:0.95, green:0.95, blue:0.95, alpha:1.00)
+
+let DEFAULT_UI_BG = UIColor.colorWithHexString("f0f0f0")
+
+let RED = UIColor.colorWithHexString("f47c8d")
 
 /// 是否允许蜂窝网播放视频
 let KEY_ALLOW_CELLULAR_PLAY = "KEY_ALLOW_CELLULAR_PLAY"

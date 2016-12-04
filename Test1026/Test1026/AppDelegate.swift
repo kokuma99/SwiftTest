@@ -34,9 +34,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
     
  //   }
-
+    /**
+     添加根控制器
+     */
+    private func setupRootViewController() {
+        
+        window = UIWindow(frame: SCREEN_BOUNDS)
+        window?.backgroundColor = COLOR_NAV_BG
+            let rootC = UINavigationController(rootViewController: ViewController())
+        rootC.navigationBarHidden=true
+        window?.rootViewController = rootC
+        
+        window?.makeKeyAndVisible()
+        
+        // 测试FPS
+        //        window?.addSubview(JFFPSLabel(frame: CGRect(x: SCREEN_WIDTH - 60, y: 26, width: 50, height: 30)))
+    }
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        setupRootViewController()
         return true
     }
 

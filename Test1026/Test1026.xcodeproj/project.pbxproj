@@ -33,6 +33,14 @@
 		29CC62291DF1AD4700FF9F07 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62221DF1AD4700FF9F07 /* UIViewExtension.swift */; };
 		29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC622A1DF1B07A00FF9F07 /* NetUtils.swift */; };
 		29CC622D1DF1B96D00FF9F07 /* HotSearchBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC622C1DF1B96D00FF9F07 /* HotSearchBean.swift */; };
+		29CC62351DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62341DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift */; };
+		29CC62441DF3EF9200FF9F07 /* JFNewFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62431DF3EF9200FF9F07 /* JFNewFeatureCell.swift */; };
+		29CC624A1DF3F27C00FF9F07 /* b5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29CC62451DF3F27C00FF9F07 /* b5.jpg */; };
+		29CC624B1DF3F27C00FF9F07 /* b4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29CC62461DF3F27C00FF9F07 /* b4.jpg */; };
+		29CC624C1DF3F27C00FF9F07 /* b3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29CC62471DF3F27C00FF9F07 /* b3.jpg */; };
+		29CC624D1DF3F27C00FF9F07 /* b2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29CC62481DF3F27C00FF9F07 /* b2.jpg */; };
+		29CC624E1DF3F27C00FF9F07 /* b1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29CC62491DF3F27C00FF9F07 /* b1.jpg */; };
+		29CC62521DF45E5700FF9F07 /* BaseColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62511DF45E5700FF9F07 /* BaseColectionView.swift */; };
 		29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0883D1DEDC7B600767BEE /* OcFile.m */; };
 		29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E088581DEDD02B00767BEE /* SVIndefiniteAnimatedView.m */; };
 		29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0885A1DEDD02B00767BEE /* SVProgressAnimatedView.m */; };
@@ -222,6 +230,14 @@
 		29CC62221DF1AD4700FF9F07 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		29CC622A1DF1B07A00FF9F07 /* NetUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUtils.swift; sourceTree = "<group>"; };
 		29CC622C1DF1B96D00FF9F07 /* HotSearchBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSearchBean.swift; sourceTree = "<group>"; };
+		29CC62341DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNewFeatureViewController.swift; sourceTree = "<group>"; };
+		29CC62431DF3EF9200FF9F07 /* JFNewFeatureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNewFeatureCell.swift; sourceTree = "<group>"; };
+		29CC62451DF3F27C00FF9F07 /* b5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b5.jpg; sourceTree = "<group>"; };
+		29CC62461DF3F27C00FF9F07 /* b4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b4.jpg; sourceTree = "<group>"; };
+		29CC62471DF3F27C00FF9F07 /* b3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b3.jpg; sourceTree = "<group>"; };
+		29CC62481DF3F27C00FF9F07 /* b2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b2.jpg; sourceTree = "<group>"; };
+		29CC62491DF3F27C00FF9F07 /* b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b1.jpg; sourceTree = "<group>"; };
+		29CC62511DF45E5700FF9F07 /* BaseColectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseColectionView.swift; sourceTree = "<group>"; };
 		29E0883C1DEDC7B600767BEE /* Test1026-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test1026-Bridging-Header.h"; sourceTree = "<group>"; };
 		29E0883D1DEDC7B600767BEE /* OcFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcFile.m; sourceTree = "<group>"; };
 		29E088571DEDD02B00767BEE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -296,6 +312,7 @@
 		291486831DC0F21300C6DC4A /* Test1026 */ = {
 			isa = PBXGroup;
 			children = (
+				29CC62341DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift */,
 				29CC621B1DF1AD0C00FF9F07 /* extensions */,
 				29E092EF1DEF1B2E00767BEE /* bean */,
 				29E092ED1DEEF3A500767BEE /* SwiftyJSON.swift */,
@@ -366,6 +383,7 @@
 			children = (
 				29E632D61DDCA54A00F97BD1 /* item */,
 				29822EF71DD21D0300495220 /* PersonalPlanList.swift */,
+				29CC62511DF45E5700FF9F07 /* BaseColectionView.swift */,
 			);
 			name = baseView;
 			sourceTree = "<group>";
@@ -415,6 +433,12 @@
 		29E632D61DDCA54A00F97BD1 /* item */ = {
 			isa = PBXGroup;
 			children = (
+				29CC62451DF3F27C00FF9F07 /* b5.jpg */,
+				29CC62461DF3F27C00FF9F07 /* b4.jpg */,
+				29CC62471DF3F27C00FF9F07 /* b3.jpg */,
+				29CC62481DF3F27C00FF9F07 /* b2.jpg */,
+				29CC62491DF3F27C00FF9F07 /* b1.jpg */,
+				29CC62431DF3EF9200FF9F07 /* JFNewFeatureCell.swift */,
 				29822EF51DD21C6B00495220 /* View1.xib */,
 				29E632F71DE3408100F97BD1 /* a.jpg */,
 				29E632E61DDF4F6C00F97BD1 /* Item.swift */,
@@ -641,12 +665,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CC624A1DF3F27C00FF9F07 /* b5.jpg in Resources */,
 				291486921DC0F21300C6DC4A /* LaunchScreen.storyboard in Resources */,
 				29E088631DEDD02B00767BEE /* SVProgressHUD.bundle in Resources */,
+				29CC624B1DF3F27C00FF9F07 /* b4.jpg in Resources */,
 				2914868F1DC0F21300C6DC4A /* Assets.xcassets in Resources */,
+				29CC624D1DF3F27C00FF9F07 /* b2.jpg in Resources */,
+				29CC624E1DF3F27C00FF9F07 /* b1.jpg in Resources */,
 				29822EF61DD21C6B00495220 /* View1.xib in Resources */,
 				29E632F81DE3408100F97BD1 /* a.jpg in Resources */,
 				2914868A1DC0F21300C6DC4A /* Main.storyboard in Resources */,
+				29CC624C1DF3F27C00FF9F07 /* b3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +701,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291486871DC0F21300C6DC4A /* ,.swift in Sources */,
+				29CC62441DF3EF9200FF9F07 /* JFNewFeatureCell.swift in Sources */,
 				29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */,
 				29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */,
 				29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */,
@@ -684,6 +714,7 @@
 				29CC62271DF1AD4700FF9F07 /* UIColorExtension.swift in Sources */,
 				2914868D1DC0F21300C6DC4A /* Test1026.xcdatamodeld in Sources */,
 				29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */,
+				29CC62521DF45E5700FF9F07 /* BaseColectionView.swift in Sources */,
 				29E088651DEDD02B00767BEE /* SVRadialGradientLayer.m in Sources */,
 				29822EE61DCEF28100495220 /* Api.swift in Sources */,
 				29CC62261DF1AD4700FF9F07 /* UIBarButtionItem.swift in Sources */,
@@ -692,6 +723,7 @@
 				29E088641DEDD02B00767BEE /* SVProgressHUD.m in Sources */,
 				29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */,
 				29CC62291DF1AD4700FF9F07 /* UIViewExtension.swift in Sources */,
+				29CC62351DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift in Sources */,
 				29CC62251DF1AD4700FF9F07 /* StringExtension.swift in Sources */,
 				29E092F11DEF1B5E00767BEE /* DynamicBean.swift in Sources */,
 				29E632F61DDFF22100F97BD1 /* ImgWithTxtView.swift in Sources */,

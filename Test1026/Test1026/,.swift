@@ -13,6 +13,7 @@ import Alamofire
 //typealias NetworkFinished = (success:Bool,result:JSON?, error:NSError?) -> ()
 
 class ViewController: UIViewController {
+    
     var grammars = [DynamicBean]()
     
     //外网
@@ -73,10 +74,15 @@ class ViewController: UIViewController {
             self.listV.grammars=self.grammars;
             self.listV.reloadData()
         }
+        toFutureController()
         
                     //SVProgressHUD.show()
     }
     
+    func toFutureController(){
+        let toController = JFNewFeatureViewController()
+      navigationController?.pushViewController(toController, animated: true)
+    }
     
     lazy var box : UIButton = {
         let button = UIButton()

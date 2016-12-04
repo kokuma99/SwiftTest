@@ -25,3 +25,4 @@ let HOT_VENUES = "/hot/venues"   //获取热门地点
 let ACGS = "/acgs"  //获取ACG作品列表、添加标签
 
 let ACGS_ONE = "/acgs/"  //获取详情   "\(ACGS_ONE)124"
+

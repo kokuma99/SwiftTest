@@ -41,7 +41,7 @@ class BaseColectionView: UICollectionView {
     }
     
     
-    internal func prepareUI2(class: AnyClass,width: Int,height: Int){
+    internal func prepareUI2(cellClass: AnyClass,width: Int,height: Int){
         self.backgroundColor=UIColor.yellowColor()
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 1.5
@@ -52,7 +52,8 @@ class BaseColectionView: UICollectionView {
        // self.dataSource=self
        // self.delegate=self
         showsHorizontalScrollIndicator = false
-       // registerClass(class, forCellWithReuseIdentifier: cellIdentifier)
+       self.registerClass(cellClass, forCellWithReuseIdentifier: cellIdentifier)
+       
     }
     
     //Item绑定数据源，cell.category = data?[indexPath.item]

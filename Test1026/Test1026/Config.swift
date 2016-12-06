@@ -15,6 +15,9 @@ let SCREEN_BOUNDS = UIScreen.mainScreen().bounds
 let SCREEN_WIDTH = SCREEN_BOUNDS.width
 let SCREEN_HEIGHT = SCREEN_BOUNDS.height
 
+let AVATAR_HEIGHT: CGFloat = 60
+let FOLLOW_HEIGHT: CGFloat = 30
+
 /// 全局边距
 let MARGIN: CGFloat = 12
 

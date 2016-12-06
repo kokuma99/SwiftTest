@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2904A0661DF5A3E100730386 /* BaseColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904A0651DF5A3E100730386 /* BaseColectionView.swift */; };
+		2904A0751DF6DDE900730386 /* BaseColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904A0741DF6DDE900730386 /* BaseColectionViewCell.swift */; };
+		2904A0771DF705D900730386 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904A0761DF705D900730386 /* UserCell.swift */; };
 		291486851DC0F21300C6DC4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291486841DC0F21300C6DC4A /* AppDelegate.swift */; };
 		291486871DC0F21300C6DC4A /* ,.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291486861DC0F21300C6DC4A /* ,.swift */; };
 		2914868A1DC0F21300C6DC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291486881DC0F21300C6DC4A /* Main.storyboard */; };
@@ -201,6 +203,8 @@
 
 /* Begin PBXFileReference section */
 		2904A0651DF5A3E100730386 /* BaseColectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseColectionView.swift; sourceTree = "<group>"; };
+		2904A0741DF6DDE900730386 /* BaseColectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseColectionViewCell.swift; sourceTree = "<group>"; };
+		2904A0761DF705D900730386 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		291486811DC0F21300C6DC4A /* Test1026.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291486841DC0F21300C6DC4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		291486861DC0F21300C6DC4A /* ,.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ",.swift"; sourceTree = "<group>"; };
@@ -387,6 +391,7 @@
 				29E632D61DDCA54A00F97BD1 /* item */,
 				29822EF71DD21D0300495220 /* PersonalPlanList.swift */,
 				2904A0651DF5A3E100730386 /* BaseColectionView.swift */,
+				2904A0741DF6DDE900730386 /* BaseColectionViewCell.swift */,
 			);
 			name = baseView;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 				29E632F71DE3408100F97BD1 /* a.jpg */,
 				29E632E61DDF4F6C00F97BD1 /* Item.swift */,
 				29E632F51DDFF22100F97BD1 /* ImgWithTxtView.swift */,
+				2904A0761DF705D900730386 /* UserCell.swift */,
 			);
 			name = item;
 			sourceTree = "<group>";
@@ -719,10 +725,12 @@
 				29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */,
 				29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */,
 				29E092EE1DEEF3A500767BEE /* SwiftyJSON.swift in Sources */,
+				2904A0771DF705D900730386 /* UserCell.swift in Sources */,
 				29CC622D1DF1B96D00FF9F07 /* HotSearchBean.swift in Sources */,
 				29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */,
 				29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */,
 				29CC62241DF1AD4700FF9F07 /* NSDateExtension.swift in Sources */,
+				2904A0751DF6DDE900730386 /* BaseColectionViewCell.swift in Sources */,
 				29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */,
 				29CC62271DF1AD4700FF9F07 /* UIColorExtension.swift in Sources */,
 				2914868D1DC0F21300C6DC4A /* Test1026.xcdatamodeld in Sources */,

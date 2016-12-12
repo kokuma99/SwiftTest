@@ -8,8 +8,21 @@
 
 import UIKit
 
-class UserCell: BaseColectionViewCell{
-    override func startButtonClick() {
-        label_content.text = "startButtonClick"
+class UserCell: BaseTableCell{
+    override func bindUI() {
+       super.bindUI()
+        let data = self.data as! OpenAccountBean
+        imageView_avatar.setImageWithURL(NSURL(string: data.avatarUrl==nil ? "" : data.avatarUrl!))
+        label_title.text = data.displayName
+        //let c = data.exts
+        guard let c = data.exts else{
+            return
+        }
+       // let f = data.exts?.dateCosstart
+        label_content.text = "aaa"
+        
+    }
+    override func prepareUI() {
+        super.prepareUI()
     }
 }

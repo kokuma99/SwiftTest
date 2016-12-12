@@ -34,8 +34,8 @@ class DynamicBean : NSObject {
     var commentCount: Int = 0
     var planId: Int = 0
     var venueName: String?
-    
-    
+   // var acgName: String?
+   // var readCount: Int = 0
     init(dict: [String : AnyObject]) {
         super.init()
         setValuesForKeysWithDictionary(dict)

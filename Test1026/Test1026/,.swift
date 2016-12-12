@@ -14,8 +14,7 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    var grammars = [DynamicBean]()
-    
+    var grammars = [AcgBean]();
     //外网
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +43,8 @@ class ViewController: UIViewController {
         listV.snp_makeConstraints { (make) in
             make.top.equalTo(180)
             make.left.equalTo(0)
-            make.height.equalTo(300)
-            make.width.equalTo(200)
+            make.bottom.equalTo(0)
+            make.right.equalTo(0)
         }
 
     }
@@ -57,28 +56,80 @@ class ViewController: UIViewController {
     }
     
     @objc private func didTapped(){
-        var param=[String : AnyObject]()
-        param["positive"] = 1
-        param["page"] = 1
-        param["perPage"] = 4
-        ViewController.loadData("/personalPlan", parameters: param){(success,result,error) in
-            guard let result=result else {
-                return
-            }
-             let data = result["data"].arrayObject as! [[String : AnyObject]]
-                for dict in data {
-                    self.grammars.append(DynamicBean(dict: dict))
-                    print("\(self.grammars.last?.id)")
-                    print("\(self.grammars.last?.positive)")
-                }
-            self.listV.grammars=self.grammars;
-            self.listV.reloadData()
-        }
-        toFutureController()
+       getAcg()
+       // toFutureController()
         
                     //SVProgressHUD.show()
     }
     
+    func getAcg() {
+        NetUtils.shareNetUtils.getAcgs("1") { (success, result, error) in
+            guard let result=result else {
+                return
+            }
+            let data = result["data"].arrayObject as! [[String : AnyObject]]
+            for dict in data {
+                self.grammars.append(AcgBean(dict : dict))
+                print("\(self.grammars.last?.id)")
+                //  print("\(self.grammars.last?.positive)")
+            }
+            self.listV.data = self.grammars
+            self.listV.reloadData()
+        }
+    }
+    func getVenue() {
+        NetUtils.shareNetUtils.getVenuesByKeyword("", page: "1") { (success, result, error) in
+            guard let result=result else {
+                return
+            }
+            let data = result["data"].arrayObject as! [[String : AnyObject]]
+            for dict in data {
+                 self.grammars.append(VenueBean(dict : dict))
+                print("\(self.grammars.last?.id)")
+                 //  print("\(self.grammars.last?.positive)")
+            }
+            self.listV.data = self.grammars
+            self.listV.reloadData()
+        }
+    }
+    
+    
+    func getUsers(){
+        NetUtils.shareNetUtils.getRecommendUsers("1") { (success, result, error) in
+            guard let result=result else {
+                return
+            }
+            let data = result["data"].arrayObject as! [[String : AnyObject]]
+            for dict in data {
+               // self.grammars.append(OpenAccountBean(dict : dict))
+                   print("\(self.grammars.last?.id)")
+                //    print("\(self.grammars.last?.positive)")
+            }
+            self.listV.data = self.grammars
+            self.listV.reloadData()
+        }
+    }
+    
+   func  getPersonalPlan(){
+    var param=[String : AnyObject]()
+    param["positive"] = 1
+    param["page"] = 1
+    param["perPage"] = 4
+    
+    ViewController.loadData("/personalPlan", parameters: param){(success,result,error) in
+    guard let result=result else {
+    return
+    }
+    let data = result["data"].arrayObject as! [[String : AnyObject]]
+    for dict in data {
+//    self.grammars.append(DynamicBean(dict: dict))
+//    print("\(self.grammars.last?.id)")
+//    print("\(self.grammars.last?.positive)")
+    }
+   // self.listV.grammars=self.grammars;
+    self.listV.reloadData()
+    }
+    }
     func toFutureController(){
         let toController = JFNewFeatureViewController()
       navigationController?.pushViewController(toController, animated: true)
@@ -91,11 +142,12 @@ class ViewController: UIViewController {
         return button
     }()
     
-    lazy var listV: PersonalPlanList={
-        let listV = PersonalPlanList()
-        listV.prepareUI()
+    lazy var listV: BaseTableView={
+        let listV = BaseTableView()
+        listV.prepareUI(VenueCell.classForCoder(),height: LIST_ITEM_HEIGHT1_1)
         return listV
     }()
+    
     //,finished: NetworkFinished
     class func loadData(url:String,parameters: [String : AnyObject]?,finished:NetworkFinished){
         Alamofire.request(.GET, "\(API_BASE_URL)\(url)",parameters: parameters).responseJSON { (response) -> Void in

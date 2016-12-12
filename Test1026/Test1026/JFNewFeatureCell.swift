@@ -13,8 +13,13 @@ class JFNewFeatureCell: UICollectionViewCell {
     // MARK: 属性
     var imageIndex: Int = 0 {
         didSet {
-            backgroundImageView.image = UIImage(named: "b\(imageIndex + 1).jpg")
-            startButton.hidden = true
+            if imageIndex==0{
+                backgroundImageView.sd_setImageWithURL(NSURL(string: "http://p3.qhimg.com/d/360browser/20130328/wallpaper6.png"))
+            }else{
+                
+                backgroundImageView.image = UIImage(named: "b\(imageIndex + 1).jpg")
+                startButton.hidden = true
+            }
         }
     }
     

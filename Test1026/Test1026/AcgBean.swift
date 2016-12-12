@@ -21,6 +21,7 @@ class AcgBean : NSObject {
     var  count: Int = 0
     var  likeCount: Int = 0
     var  collection: Int = 0
+   // var c: NSDate?
     
     
     init(dict: [ String : AnyObject]) {

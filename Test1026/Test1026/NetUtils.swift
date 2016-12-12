@@ -36,7 +36,7 @@ extension NetUtils {
             
             if let data = response.data {
                 let json = JSON(data: data)
-                // print(json)
+                 print(json)
                 finished(success: true, result: json, error: nil)
             } else {
                 // JFProgressHUD.showInfoWithStatus("您的网络不给力哦")
@@ -148,11 +148,11 @@ extension NetUtils {
     }
     
     //获取漫圈所有数据(HotCos2Fragment)//keyword 可以设为""
-    func getAcgs( page: String, keyword: String, finished: NetworkFinished){
+    func getAcgs( page: String, finished: NetworkFinished){
         let parameters: [String : AnyObject] = [
             "page" : page,
             "perPage" : 10,
-            "keyword" : keyword
+            "keyword" : ""
         ]
         get(ACGS, parameters: parameters, finished: finished)
     }

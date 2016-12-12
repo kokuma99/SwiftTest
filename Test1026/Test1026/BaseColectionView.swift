@@ -18,6 +18,9 @@ class BaseColectionView: UICollectionView {
             self.reloadData()
         }
     }
+    var topUIEdgeInset,leftUIEdgeInset,bottomUIEdgeInset,rightUIEdgeInset : CGFloat?
+    
+    
     weak var baseDelegate: BaseColectionCellDelegate?
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
@@ -41,7 +44,7 @@ class BaseColectionView: UICollectionView {
     }
     
     
-    internal func prepareUI2(cellClass: AnyClass,width: Int,height: Int){
+    internal func prepareUI(cellClass: AnyClass,width: Int,height: Int){
         self.backgroundColor=UIColor.yellowColor()
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 1.5
@@ -54,6 +57,13 @@ class BaseColectionView: UICollectionView {
         showsHorizontalScrollIndicator = false
        self.registerClass(cellClass, forCellWithReuseIdentifier: cellIdentifier)
        
+    }
+    
+    internal func setUIEdgeInsetsMake(top: CGFloat, _ left: CGFloat, _ bottom: CGFloat, _ right: CGFloat) {
+        self.topUIEdgeInset = top
+        self.leftUIEdgeInset = left
+        self.bottomUIEdgeInset = bottom
+        self.rightUIEdgeInset = right
     }
     
     //Item绑定数据源，cell.category = data?[indexPath.item]
@@ -83,8 +93,8 @@ extension BaseColectionView :  UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     //返回cell 上下左右的间距
-    //  func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
-    //   return UIEdgeInsetsMake(5, 10, 5, 10)
-    // }
+     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
+       return UIEdgeInsetsMake(5, 10, 5, 10)
+     }
 
 }

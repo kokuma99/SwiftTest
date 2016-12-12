@@ -50,4 +50,11 @@ class VenueCell: BaseTableCell{
             make.height.equalTo(100)
         }
     }
+    
+    internal func toController(targetController: UIViewController){
+      let root =  UIApplication.sharedApplication().keyWindow?.rootViewController
+       root?.presentViewController(targetController, animated: true, completion: {
+        print("toController-present")
+       })
+    }
 }

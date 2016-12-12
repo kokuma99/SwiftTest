@@ -14,7 +14,7 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    var grammars = [AcgBean]();
+    var  data = [NSObject]();
     //外网
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,11 +69,11 @@ class ViewController: UIViewController {
             }
             let data = result["data"].arrayObject as! [[String : AnyObject]]
             for dict in data {
-                self.grammars.append(AcgBean(dict : dict))
-                print("\(self.grammars.last?.id)")
-                //  print("\(self.grammars.last?.positive)")
+                self.data.append(AcgBean(dict : dict))
+               // print("\(self..last?.id)")
+                //  print("\(self..last?.positive)")
             }
-            self.listV.data = self.grammars
+            self.listV.data = self.data
             self.listV.reloadData()
         }
     }
@@ -84,11 +84,11 @@ class ViewController: UIViewController {
             }
             let data = result["data"].arrayObject as! [[String : AnyObject]]
             for dict in data {
-                 self.grammars.append(VenueBean(dict : dict))
-                print("\(self.grammars.last?.id)")
-                 //  print("\(self.grammars.last?.positive)")
+                 self.data.append(AcgBean(dict : dict))
+               // print("\(self..last?.id)")
+                 //  print("\(self..last?.positive)")
             }
-            self.listV.data = self.grammars
+            self.listV.data = self.data
             self.listV.reloadData()
         }
     }
@@ -101,11 +101,11 @@ class ViewController: UIViewController {
             }
             let data = result["data"].arrayObject as! [[String : AnyObject]]
             for dict in data {
-               // self.grammars.append(OpenAccountBean(dict : dict))
-                   print("\(self.grammars.last?.id)")
-                //    print("\(self.grammars.last?.positive)")
+                self.data.append(OpenAccountBean(dict : dict))
+                 //  print("\(self..last?.id)")
+                //    print("\(self..last?.positive)")
             }
-            self.listV.data = self.grammars
+            self.listV.data = self.data
             self.listV.reloadData()
         }
     }
@@ -122,11 +122,11 @@ class ViewController: UIViewController {
     }
     let data = result["data"].arrayObject as! [[String : AnyObject]]
     for dict in data {
-//    self.grammars.append(DynamicBean(dict: dict))
-//    print("\(self.grammars.last?.id)")
-//    print("\(self.grammars.last?.positive)")
+//    self..append(DynamicBean(dict: dict))
+//    print("\(self..last?.id)")
+//    print("\(self..last?.positive)")
     }
-   // self.listV.grammars=self.grammars;
+   // self.listV.=self.;
     self.listV.reloadData()
     }
     }

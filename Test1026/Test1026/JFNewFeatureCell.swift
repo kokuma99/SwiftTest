@@ -70,7 +70,9 @@ class JFNewFeatureCell: UICollectionViewCell {
      开始按钮点击
      */
     func startButtonClick() {
-        UIApplication.sharedApplication().keyWindow?.rootViewController = UIStoryboard.init(name: "JFNewsViewController", bundle: nil).instantiateInitialViewController()
+       // UIApplication.sharedApplication().keyWindow?.rootViewController = UIStoryboard.init(name: "UserListController", bundle: nil).instantiateInitialViewController()
+      let cv =  UIApplication.sharedApplication().keyWindow?.rootViewController as? UINavigationController
+        cv?.pushViewController(VenueListController() , animated: true)
     }
     
     // MARK: - 懒加载

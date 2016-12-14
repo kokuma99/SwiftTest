@@ -56,8 +56,9 @@ class ViewController: UIViewController {
     }
     
     @objc private func didTapped(){
-       getAcg()
-       // toFutureController()
+        toController(TopicListCotroller())
+       //getAcg()
+        //toFutureController()
         
                     //SVProgressHUD.show()
     }

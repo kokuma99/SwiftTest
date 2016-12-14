@@ -11,7 +11,7 @@
 class VenueBean : NSObject {
     var  id: Int = 0
     var  name: String?
-    var  tags: AnyObject?
+    var  tags: [String]?
     
     var  city: String?
     var  district: String?

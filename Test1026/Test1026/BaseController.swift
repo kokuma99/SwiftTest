@@ -35,6 +35,12 @@ class BaseController: UIViewController {
       //  topScrollView?.adjustWhenControllerViewWillAppera()
     }
     
+    func test(){
+        var a:  Array<String>
+        var b:  NSArray
+    }
+    
+    
     /**
      准备UI
      */
@@ -49,6 +55,21 @@ class BaseController: UIViewController {
      */
      func loadData() {
         // NetUtils.shareNetUtils
+    }
+    
+    func getDynamic_top(finished : GetDataFinished) {
+        NetUtils.shareNetUtils.getTopicsByKeyword("",page: "1") { (success, result, error) in
+            guard let result=result else {
+                return
+            }
+            let data = result["data"].arrayObject as! [[String : AnyObject]]
+            for dict in data {
+                self.data.append(DynamicBean(dict : dict))
+                // print("\(self..last?.id)")
+                //  print("\(self..last?.positive)")
+            }
+            finished()
+        }
     }
     
     func getAcg(finished : GetDataFinished) {
@@ -72,7 +93,7 @@ class BaseController: UIViewController {
             }
             let data = result["data"].arrayObject as! [[String : AnyObject]]
             for dict in data {
-                self.data.append(AcgBean(dict : dict))
+                self.data.append(VenueBean(dict : dict))
                 // print("\(self..last?.id)")
                 //  print("\(self..last?.positive)")
             }

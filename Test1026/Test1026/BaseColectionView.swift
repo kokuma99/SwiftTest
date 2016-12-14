@@ -93,8 +93,8 @@ extension BaseColectionView :  UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     //返回cell 上下左右的间距
-     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
-       return UIEdgeInsetsMake(5, 10, 5, 10)
-     }
+//     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
+//       return UIEdgeInsetsMake(5, 10, 5, 10)
+//     }
 
 }

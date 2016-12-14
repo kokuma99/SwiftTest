@@ -22,7 +22,5 @@ class UserCell: BaseTableCell{
         label_content.text = "aaa"
         
     }
-    override func prepareUI() {
-        super.prepareUI()
-    }
+  
 }

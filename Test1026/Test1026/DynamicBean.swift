@@ -6,7 +6,8 @@
 //  Copyright © 2016年 kokuma. All rights reserved.
 //
 
-
+//import Foundation
+//import CoreData
 
 class DynamicBean : NSObject {
     var id = 0
@@ -34,11 +35,23 @@ class DynamicBean : NSObject {
     var commentCount: Int = 0
     var planId: Int = 0
     var venueName: String?
-   // var acgName: String?
-   // var readCount: Int = 0
+    var dynamicExtras: DynamicExtrasBean?
+    var openAccountView: OpenAccountBean?
+    var pictureView: NSArray?
+    var characterSetView: CharacterSetBean?
+    var comment: CommentBean?
+    
     init(dict: [String : AnyObject]) {
         super.init()
         setValuesForKeysWithDictionary(dict)
+//         guard let pics = dict["pictureView"] as? NSArray else{
+//           return
+//        }
+//        
+//        for subDict in pics {
+//             let pic: PictureBean = PictureBean(dict: subDict as! [String : AnyObject])
+//             pictureView.append(pic)
+//        }
     }
     
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {}

@@ -1,24 +1,20 @@
 //
-//  VenueCell.swift
+//  TopicCell.swift
 //  Test1026
 //
-//  Created by kokuma on 2016/12/11.
+//  Created by kokuma on 2016/12/13.
 //  Copyright © 2016年 kokuma. All rights reserved.
 //
 
 import UIKit
 
-class VenueCell: BaseTableCell{
+class TopicCell: BaseTableCell{
     
-
+    
     override func bindUI() {
         super.bindUI()
-        let data = self.data as! VenueBean
-        imageView_bg.setImageWithURL(NSURL(string: data.images==nil ? "" : "\(data.images![0])@1000w_"))
-        label_title.text = data.name
-         let f = data.tags?[0]
-        
-        label_content.text = f
+        let data = self.data as! DynamicBean
+        bindDynamic_topic(data, imageView_cover: imageView_bg, label_title: label_title, label_content: label_content, label_follow : nil)
     }
     
     
@@ -26,7 +22,7 @@ class VenueCell: BaseTableCell{
         //super.prepareUI()
         label_content.textAlignment = .Left
         contentView.addSubview(imageView_bg)
-       // contentView.addSubview(imageView_avatar)
+        // contentView.addSubview(imageView_avatar)
         contentView.addSubview(label_content)
         contentView.addSubview(label_title)
         label_title.textColor = UIColor.whiteColor()

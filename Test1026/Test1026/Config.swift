@@ -199,6 +199,7 @@ func isLogin(controller: UIViewController) -> Bool {
     
 }
 
+
 /**
  缓存json数据为指定json文件
  
@@ -248,6 +249,22 @@ func getJson(jsonPath: String) -> JSON? {
     }
     print("获取缓存数据失败", jsonPath)
     return nil
+}
+
+//设置布局match parent
+func setMatchParent(v : UIView,_ top: Int,_ margin_L_R: Int){
+    v.snp_makeConstraints { (make) in
+        make.top.equalTo(top)
+        make.left.equalTo(margin_L_R)
+        make.bottom.equalTo(0)
+        make.right.equalTo(-margin_L_R)
+    }
+}
+
+//跳转至目标界面
+func toController(targetController: UIViewController){
+    let root =  UIApplication.sharedApplication().keyWindow?.rootViewController as? UINavigationController
+    root?.pushViewController(targetController, animated: true)
 }
 
 /// 远程推送通知的处理通知

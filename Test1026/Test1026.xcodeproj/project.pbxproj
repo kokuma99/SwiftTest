@@ -58,6 +58,14 @@
 		299324E11DFCF7EF00B58883 /* PictureBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324E01DFCF7EF00B58883 /* PictureBean.swift */; };
 		299324E31DFD1D5800B58883 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324E21DFD1D5800B58883 /* BaseTableView.swift */; };
 		299324E51DFD7DF400B58883 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324E41DFD7DF400B58883 /* VenueCell.swift */; };
+		299324EA1DFEE9CB00B58883 /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324E91DFEE9CB00B58883 /* UserListController.swift */; };
+		299324EC1DFFB68500B58883 /* AcgListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324EB1DFFB68500B58883 /* AcgListController.swift */; };
+		299324EE1DFFBAA700B58883 /* AcgCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324ED1DFFBAA700B58883 /* AcgCell1.swift */; };
+		299324F01DFFC77C00B58883 /* CharacterSetBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324EF1DFFC77C00B58883 /* CharacterSetBean.swift */; };
+		299324F21DFFCE5D00B58883 /* CommentBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F11DFFCE5D00B58883 /* CommentBean.swift */; };
+		299324F41DFFD8BA00B58883 /* VenueListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F31DFFD8BA00B58883 /* VenueListController.swift */; };
+		299324F61DFFE51600B58883 /* TopicListCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F51DFFE51600B58883 /* TopicListCotroller.swift */; };
+		299324F81DFFEA1200B58883 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F71DFFEA1200B58883 /* TopicCell.swift */; };
 		29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62081DF1A80D00FF9F07 /* AcgBean.swift */; };
 		29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62191DF1ABFC00FF9F07 /* Config.swift */; };
 		29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */; };
@@ -432,6 +440,14 @@
 		299324E01DFCF7EF00B58883 /* PictureBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBean.swift; sourceTree = "<group>"; };
 		299324E21DFD1D5800B58883 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		299324E41DFD7DF400B58883 /* VenueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		299324E91DFEE9CB00B58883 /* UserListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
+		299324EB1DFFB68500B58883 /* AcgListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgListController.swift; sourceTree = "<group>"; };
+		299324ED1DFFBAA700B58883 /* AcgCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgCell1.swift; sourceTree = "<group>"; };
+		299324EF1DFFC77C00B58883 /* CharacterSetBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetBean.swift; sourceTree = "<group>"; };
+		299324F11DFFCE5D00B58883 /* CommentBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentBean.swift; sourceTree = "<group>"; };
+		299324F31DFFD8BA00B58883 /* VenueListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueListController.swift; sourceTree = "<group>"; };
+		299324F51DFFE51600B58883 /* TopicListCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListCotroller.swift; sourceTree = "<group>"; };
+		299324F71DFFEA1200B58883 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		29CC62081DF1A80D00FF9F07 /* AcgBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgBean.swift; sourceTree = "<group>"; };
 		29CC62191DF1ABFC00FF9F07 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
@@ -574,11 +590,11 @@
 		291486831DC0F21300C6DC4A /* Test1026 */ = {
 			isa = PBXGroup;
 			children = (
+				299324E81DFEE79C00B58883 /* controllers */,
 				2993243F1DF97F5400B58883 /* SQLite */,
 				299323FF1DF96F3900B58883 /* MJRefresh */,
 				29D353981DF95CB800255B57 /* SDWebImage */,
 				29D353671DF95BB900255B57 /* SDWebImage */,
-				29CC62551DF59CE500FF9F07 /* baseCV */,
 				29CC62341DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift */,
 				29CC621B1DF1AD0C00FF9F07 /* extensions */,
 				29E092EF1DEF1B2E00767BEE /* bean */,
@@ -586,7 +602,6 @@
 				29E088561DEDD02B00767BEE /* SVProgressHUD */,
 				29822EF41DD21AF000495220 /* views */,
 				291486841DC0F21300C6DC4A /* AppDelegate.swift */,
-				291486861DC0F21300C6DC4A /* ,.swift */,
 				291486881DC0F21300C6DC4A /* Main.storyboard */,
 				2914868E1DC0F21300C6DC4A /* Assets.xcassets */,
 				291486901DC0F21300C6DC4A /* LaunchScreen.storyboard */,
@@ -772,6 +787,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		299324E81DFEE79C00B58883 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				291486861DC0F21300C6DC4A /* ,.swift */,
+				29CC62551DF59CE500FF9F07 /* baseCV */,
+				299324E91DFEE9CB00B58883 /* UserListController.swift */,
+				299324EB1DFFB68500B58883 /* AcgListController.swift */,
+				299324F31DFFD8BA00B58883 /* VenueListController.swift */,
+				299324F51DFFE51600B58883 /* TopicListCotroller.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		29CC621B1DF1AD0C00FF9F07 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -821,6 +849,8 @@
 				29E632F51DDFF22100F97BD1 /* ImgWithTxtView.swift */,
 				2904A0761DF705D900730386 /* UserCell.swift */,
 				299324E41DFD7DF400B58883 /* VenueCell.swift */,
+				299324ED1DFFBAA700B58883 /* AcgCell1.swift */,
+				299324F71DFFEA1200B58883 /* TopicCell.swift */,
 			);
 			name = customs;
 			sourceTree = "<group>";
@@ -918,6 +948,8 @@
 				299324DC1DFCED6600B58883 /* OpenAccountBean.swift */,
 				299324DE1DFCF23600B58883 /* DynamicExtrasBean.swift */,
 				299324E01DFCF7EF00B58883 /* PictureBean.swift */,
+				299324EF1DFFC77C00B58883 /* CharacterSetBean.swift */,
+				299324F11DFFCE5D00B58883 /* CommentBean.swift */,
 			);
 			name = bean;
 			sourceTree = "<group>";
@@ -1295,6 +1327,7 @@
 				2904A0661DF5A3E100730386 /* BaseColectionView.swift in Sources */,
 				291486871DC0F21300C6DC4A /* ,.swift in Sources */,
 				29D353971DF95BB900255B57 /* UIView+WebCacheOperation.m in Sources */,
+				299324F21DFFCE5D00B58883 /* CommentBean.swift in Sources */,
 				29CC62571DF59D2100FF9F07 /* BaseController.swift in Sources */,
 				299324E31DFD1D5800B58883 /* BaseTableView.swift in Sources */,
 				299324361DF973B100B58883 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1302,6 +1335,7 @@
 				299324381DF973B100B58883 /* MJRefreshNormalHeader.m in Sources */,
 				29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */,
 				299324DF1DFCF23600B58883 /* DynamicExtrasBean.swift in Sources */,
+				299324EA1DFEE9CB00B58883 /* UserListController.swift in Sources */,
 				299324391DF973B100B58883 /* MJRefreshStateHeader.m in Sources */,
 				2993243C1DF973B100B58883 /* UIScrollView+MJExtension.m in Sources */,
 				299324D91DFCE7ED00B58883 /* VenueInfoBean.swift in Sources */,
@@ -1309,19 +1343,24 @@
 				299324341DF973B100B58883 /* MJRefreshBackGifFooter.m in Sources */,
 				299324331DF973B100B58883 /* MJRefreshAutoStateFooter.m in Sources */,
 				29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */,
+				299324EC1DFFB68500B58883 /* AcgListController.swift in Sources */,
 				29D353921DF95BB900255B57 /* UIButton+WebCache.m in Sources */,
 				29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */,
 				29E092EE1DEEF3A500767BEE /* SwiftyJSON.swift in Sources */,
 				29D353891DF95BB900255B57 /* README.md in Sources */,
 				2993242E1DF973B100B58883 /* MJRefreshComponent.m in Sources */,
 				29D353931DF95BB900255B57 /* UIImage+GIF.m in Sources */,
+				299324F01DFFC77C00B58883 /* CharacterSetBean.swift in Sources */,
 				29D353911DF95BB900255B57 /* SDWebImagePrefetcher.m in Sources */,
 				2904A0771DF705D900730386 /* UserCell.swift in Sources */,
 				299324DB1DFCEA4C00B58883 /* ExtBean.swift in Sources */,
 				29CC622D1DF1B96D00FF9F07 /* HotSearchBean.swift in Sources */,
+				299324EE1DFFBAA700B58883 /* AcgCell1.swift in Sources */,
 				29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */,
+				299324F41DFFD8BA00B58883 /* VenueListController.swift in Sources */,
 				29D3538C1DF95BB900255B57 /* SDWebImageCompat.m in Sources */,
 				299324351DF973B100B58883 /* MJRefreshBackNormalFooter.m in Sources */,
+				299324F61DFFE51600B58883 /* TopicListCotroller.swift in Sources */,
 				29D3538E1DF95BB900255B57 /* SDWebImageDownloader.m in Sources */,
 				29D353951DF95BB900255B57 /* UIImageView+HighlightedWebCache.m in Sources */,
 				29D3538F1DF95BB900255B57 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1337,6 +1376,7 @@
 				2914868D1DC0F21300C6DC4A /* Test1026.xcdatamodeld in Sources */,
 				29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */,
 				29E088651DEDD02B00767BEE /* SVRadialGradientLayer.m in Sources */,
+				299324F81DFFEA1200B58883 /* TopicCell.swift in Sources */,
 				29822EE61DCEF28100495220 /* Api.swift in Sources */,
 				29CC62261DF1AD4700FF9F07 /* UIBarButtionItem.swift in Sources */,
 				29D353941DF95BB900255B57 /* UIImage+MultiFormat.m in Sources */,

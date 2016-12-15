@@ -22,5 +22,5 @@ class UserCell: BaseTableCell{
         label_content.text = "aaa"
         
     }
-  
+     
 }

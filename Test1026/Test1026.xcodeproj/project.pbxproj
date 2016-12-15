@@ -66,6 +66,9 @@
 		299324F41DFFD8BA00B58883 /* VenueListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F31DFFD8BA00B58883 /* VenueListController.swift */; };
 		299324F61DFFE51600B58883 /* TopicListCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F51DFFE51600B58883 /* TopicListCotroller.swift */; };
 		299324F81DFFEA1200B58883 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F71DFFEA1200B58883 /* TopicCell.swift */; };
+		299324FA1E02216D00B58883 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F91E02216D00B58883 /* MyProfileController.swift */; };
+		299324FD1E02C59800B58883 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324FC1E02C59800B58883 /* ItemView.swift */; };
+		299324FF1E02E14100B58883 /* AvatarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324FE1E02E14100B58883 /* AvatarGroupView.swift */; };
 		29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62081DF1A80D00FF9F07 /* AcgBean.swift */; };
 		29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62191DF1ABFC00FF9F07 /* Config.swift */; };
 		29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */; };
@@ -448,6 +451,9 @@
 		299324F31DFFD8BA00B58883 /* VenueListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueListController.swift; sourceTree = "<group>"; };
 		299324F51DFFE51600B58883 /* TopicListCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListCotroller.swift; sourceTree = "<group>"; };
 		299324F71DFFEA1200B58883 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		299324F91E02216D00B58883 /* MyProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
+		299324FC1E02C59800B58883 /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		299324FE1E02E14100B58883 /* AvatarGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarGroupView.swift; sourceTree = "<group>"; };
 		29CC62081DF1A80D00FF9F07 /* AcgBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgBean.swift; sourceTree = "<group>"; };
 		29CC62191DF1ABFC00FF9F07 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
@@ -663,6 +669,7 @@
 		29822EF41DD21AF000495220 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				299324FB1E02C56600B58883 /* profiles */,
 				29E632D61DDCA54A00F97BD1 /* item */,
 				29822EF71DD21D0300495220 /* PersonalPlanList.swift */,
 				29D353651DF9513D00255B57 /* baseCustoms */,
@@ -796,8 +803,18 @@
 				299324EB1DFFB68500B58883 /* AcgListController.swift */,
 				299324F31DFFD8BA00B58883 /* VenueListController.swift */,
 				299324F51DFFE51600B58883 /* TopicListCotroller.swift */,
+				299324F91E02216D00B58883 /* MyProfileController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		299324FB1E02C56600B58883 /* profiles */ = {
+			isa = PBXGroup;
+			children = (
+				299324FC1E02C59800B58883 /* ItemView.swift */,
+				299324FE1E02E14100B58883 /* AvatarGroupView.swift */,
+			);
+			name = profiles;
 			sourceTree = "<group>";
 		};
 		29CC621B1DF1AD0C00FF9F07 /* extensions */ = {
@@ -1331,11 +1348,13 @@
 				29CC62571DF59D2100FF9F07 /* BaseController.swift in Sources */,
 				299324E31DFD1D5800B58883 /* BaseTableView.swift in Sources */,
 				299324361DF973B100B58883 /* MJRefreshBackStateFooter.m in Sources */,
+				299324FA1E02216D00B58883 /* MyProfileController.swift in Sources */,
 				29CC62441DF3EF9200FF9F07 /* JFNewFeatureCell.swift in Sources */,
 				299324381DF973B100B58883 /* MJRefreshNormalHeader.m in Sources */,
 				29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */,
 				299324DF1DFCF23600B58883 /* DynamicExtrasBean.swift in Sources */,
 				299324EA1DFEE9CB00B58883 /* UserListController.swift in Sources */,
+				299324FD1E02C59800B58883 /* ItemView.swift in Sources */,
 				299324391DF973B100B58883 /* MJRefreshStateHeader.m in Sources */,
 				2993243C1DF973B100B58883 /* UIScrollView+MJExtension.m in Sources */,
 				299324D91DFCE7ED00B58883 /* VenueInfoBean.swift in Sources */,
@@ -1361,6 +1380,7 @@
 				29D3538C1DF95BB900255B57 /* SDWebImageCompat.m in Sources */,
 				299324351DF973B100B58883 /* MJRefreshBackNormalFooter.m in Sources */,
 				299324F61DFFE51600B58883 /* TopicListCotroller.swift in Sources */,
+				299324FF1E02E14100B58883 /* AvatarGroupView.swift in Sources */,
 				29D3538E1DF95BB900255B57 /* SDWebImageDownloader.m in Sources */,
 				29D353951DF95BB900255B57 /* UIImageView+HighlightedWebCache.m in Sources */,
 				29D3538F1DF95BB900255B57 /* SDWebImageDownloaderOperation.m in Sources */,

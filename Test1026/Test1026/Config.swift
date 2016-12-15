@@ -17,7 +17,7 @@ let SCREEN_HEIGHT = SCREEN_BOUNDS.height
 
 let AVATAR_HEIGHT: CGFloat = 60
 let FOLLOW_HEIGHT: CGFloat = 30
-
+let ITEM_ICON_HEIGHT: CGFloat = 25
 /// 全局边距
 let MARGIN: CGFloat = 12
 
@@ -267,7 +267,99 @@ func toController(targetController: UIViewController){
     root?.pushViewController(targetController, animated: true)
 }
 
-/// 远程推送通知的处理通知
+//----------------------------------------------------------------UI创建部分
+//获取内容展示标签
+func getLabelContent() -> UILabel{
+    let view = UILabel()
+    view.numberOfLines = 1
+    view.backgroundColor = UIColor.clearColor()
+    view.textAlignment = NSTextAlignment.Center
+    view.font =   UIFont.systemFontOfSize(12)
+    view.textColor = UIColor.colorWithHexString("#999999")
+    view.text = "我是小柠檬"
+    return view
+}
+
+//获取头像控件（圆形）
+func getAvatarImageView() -> UIImageView{
+    let view = UIImageView()
+    view.layer.cornerRadius = AVATAR_HEIGHT/2
+    view.layer.masksToBounds = true
+    return view
+}
+
+//获取标题展示控件
+func getLabelTitle() -> UILabel{
+    let view = UILabel()
+    view.numberOfLines = 1
+    view.backgroundColor = UIColor.clearColor()
+    view.textAlignment = NSTextAlignment.Center
+    view.font = UIFont.systemFontOfSize(14)
+    view.text = "小柠檬"
+    view.textColor = UIColor.colorWithHexString("#333333")
+    return view
+}
+
+
+//-------------------------------------------------------------绑定数据相关
+
+//绑定OpenAccountBean数据
+func bindUserAccount(data: OpenAccountBean,imageView_avatar: UIImageView,label_title: UILabel,label_content: UILabel) {
+    imageView_avatar.setImageWithURL(NSURL(string: data.avatarUrl==nil ? "" : data.avatarUrl!))
+    label_title.text = data.displayName
+    //let c = data.exts
+    guard let c = data.exts else{
+        return
+    }
+    // let f = data.exts?.dateCosstart
+    label_content.text = "此人很懒～神马也没留下～"
+}
+
+//绑定Acg数据frontCover name count "订阅："   "人"  "订阅：0人" (AcgAdapter2,item_acg_search2)
+func bindAcg(mAcgBean: AcgBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
+    imageView_cover.sd_setImageWithURL(NSURL(string: mAcgBean.frontCover==nil ? "" : mAcgBean.frontCover!))
+    label_title.text = mAcgBean.name
+    label_content.text = "订阅：\(mAcgBean.count)人"
+    label_follow?.text = "+订阅"
+}
+
+//绑定Topic数据content "分享专题"  zanCount "次喜欢"  dynamicView.getPictureView().get(0).getPicUrl()
+func bindDynamic_topic(mDynamic: DynamicBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
+    if mDynamic.pictureView != nil{
+        let pics  = mDynamic.pictureView
+        let pic: PictureBean = PictureBean(dict: pics![0] as! [String : AnyObject])
+        // let pic = pics[0]
+        imageView_cover.sd_setImageWithURL(NSURL(string: (pic.picUrl)!))
+    }
+    
+    let content =  mDynamic.content
+    label_title.text = content==nil ? "分享专题" : content
+    label_content.text = "\(mDynamic.zanCount)次喜欢"
+}
+
+//绑定Cos正片数据authorAvatar   author  "小曼" acgName   readCount   bean.getExcellentWorksImagesView().get(0).getPicUrl()
+func bindDynamic_COS(mDynamic: DynamicBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
+    if mDynamic.pictureView != nil{
+        let pics  = mDynamic.pictureView
+        let pic: PictureBean = PictureBean(dict: pics![0] as! [String : AnyObject])
+        // let pic = pics[0]
+        imageView_cover.sd_setImageWithURL(NSURL(string: (pic.picUrl)!))
+    }
+    label_title.text = mDynamic.dynamicExtras?.acgName
+    label_content.text = "\(mDynamic.characterSetView?.readCount)次喜欢"
+}
+
+//绑定场地数据 mVenueView.getCover() mVenueView.getTags() (mVenueView.getCreatorAvatarUrl() mVenueView.getCreatorDisplayName()
+func bindVenue(mVenue: VenueBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
+    imageView_cover.sd_setImageWithURL(NSURL(string: mVenue.cover==nil ? "" : mVenue.cover!))
+    
+    label_title.text = mVenue.name
+    //标签待定
+    label_content.text = mVenue.tags?[0]
+}
+
+/// ------------------------------------------------------------远程推送通知的处理通知
+
 let JFDidReceiveRemoteNotificationOfJPush = "JFDidReceiveRemoteNotificationOfJPush"
 
 /// 应用id

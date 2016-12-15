@@ -79,50 +79,7 @@ class BaseTableCell: UITableViewCell {
     func startButtonClick() {
         // UIApplication.sharedApplication().keyWindow?.rootViewController = UIStoryboard.init(name: "JFNewsViewController", bundle: nil).instantiateInitialViewController()
     }
-    
-    //绑定Acg数据frontCover name count "订阅："   "人"  "订阅：0人" (AcgAdapter2,item_acg_search2)
-    func bindAcg(mAcgBean: AcgBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
-        imageView_cover.sd_setImageWithURL(NSURL(string: mAcgBean.frontCover==nil ? "" : mAcgBean.frontCover!))
-        label_title.text = mAcgBean.name
-        label_content.text = "订阅：\(mAcgBean.count)人"
-        label_follow?.text = "+订阅"
-    }
-    
-    //绑定Topic数据content "分享专题"  zanCount "次喜欢"  dynamicView.getPictureView().get(0).getPicUrl()
-  	 func bindDynamic_topic(mDynamic: DynamicBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
-        if mDynamic.pictureView != nil{
-            let pics  = mDynamic.pictureView
-            let pic: PictureBean = PictureBean(dict: pics![0] as! [String : AnyObject])
-           // let pic = pics[0]
-            imageView_cover.sd_setImageWithURL(NSURL(string: (pic.picUrl)!))
-         }
-        
-       let content =  mDynamic.content
-        label_title.text = content==nil ? "分享专题" : content
-        label_content.text = "\(mDynamic.zanCount)次喜欢"
-    }
-    
-    //绑定Cos正片数据authorAvatar   author  "小曼" acgName   readCount   bean.getExcellentWorksImagesView().get(0).getPicUrl()
-    func bindDynamic_COS(mDynamic: DynamicBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
-        if mDynamic.pictureView != nil{
-            let pics  = mDynamic.pictureView
-            let pic: PictureBean = PictureBean(dict: pics![0] as! [String : AnyObject])
-            // let pic = pics[0]
-            imageView_cover.sd_setImageWithURL(NSURL(string: (pic.picUrl)!))
-        }
-        label_title.text = mDynamic.dynamicExtras?.acgName
-        label_content.text = "\(mDynamic.characterSetView?.readCount)次喜欢"
-    }
-    
-    //绑定场地数据 mVenueView.getCover() mVenueView.getTags() (mVenueView.getCreatorAvatarUrl() mVenueView.getCreatorDisplayName()
-    func bindVenue(mVenue: VenueBean,imageView_cover: UIImageView,label_title: UILabel,label_content: UILabel,label_follow: UILabel?) {
-        imageView_cover.sd_setImageWithURL(NSURL(string: mVenue.cover==nil ? "" : mVenue.cover!))
-
-        label_title.text = mVenue.name
-        //标签待定
-        label_content.text = mVenue.tags?[0]
-    }
-    
+       
     // MARK: - 懒加载
     /// 背景
      lazy var imageView_bg = UIImageView()

@@ -12,6 +12,7 @@ class TopicListCotroller : BaseController {
     var listV: BaseTableView?
     
     override func prepareUI() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:  UIImage(named: "left_back_gray"), style: .Plain, target: self, action: Selector("didTappedCloseButton"))
         listV  = getBaseTableView(TopicCell.classForCoder(),height: LIST_ITEM_HEIGHT1_2)
         
         self.view.addSubview(listV!)
@@ -23,5 +24,12 @@ class TopicListCotroller : BaseController {
             self.listV?.data = self.data
             self.listV?.reloadData()
         }
+    }
+    
+    /**
+     点击了顶部关闭按钮
+     */
+    func didTappedCloseButton() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

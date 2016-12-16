@@ -18,6 +18,7 @@ let SCREEN_HEIGHT = SCREEN_BOUNDS.height
 let AVATAR_HEIGHT: CGFloat = 60
 let FOLLOW_HEIGHT: CGFloat = 30
 let ITEM_ICON_HEIGHT: CGFloat = 25
+let ITEMVIEW_HEIGHT: CGFloat = 44
 /// 全局边距
 let MARGIN: CGFloat = 12
 

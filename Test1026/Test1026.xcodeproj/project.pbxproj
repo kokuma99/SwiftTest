@@ -69,6 +69,8 @@
 		299324FA1E02216D00B58883 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324F91E02216D00B58883 /* MyProfileController.swift */; };
 		299324FD1E02C59800B58883 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324FC1E02C59800B58883 /* ItemView.swift */; };
 		299324FF1E02E14100B58883 /* AvatarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324FE1E02E14100B58883 /* AvatarGroupView.swift */; };
+		299325011E0411F700B58883 /* JFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299325001E0411F700B58883 /* JFTabBar.swift */; };
+		299325031E04147000B58883 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299325021E04147000B58883 /* BaseTabBarController.swift */; };
 		29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62081DF1A80D00FF9F07 /* AcgBean.swift */; };
 		29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62191DF1ABFC00FF9F07 /* Config.swift */; };
 		29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */; };
@@ -454,6 +456,8 @@
 		299324F91E02216D00B58883 /* MyProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
 		299324FC1E02C59800B58883 /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		299324FE1E02E14100B58883 /* AvatarGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarGroupView.swift; sourceTree = "<group>"; };
+		299325001E0411F700B58883 /* JFTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFTabBar.swift; sourceTree = "<group>"; };
+		299325021E04147000B58883 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		29CC62081DF1A80D00FF9F07 /* AcgBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgBean.swift; sourceTree = "<group>"; };
 		29CC62191DF1ABFC00FF9F07 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
@@ -673,6 +677,7 @@
 				29E632D61DDCA54A00F97BD1 /* item */,
 				29822EF71DD21D0300495220 /* PersonalPlanList.swift */,
 				29D353651DF9513D00255B57 /* baseCustoms */,
+				299325001E0411F700B58883 /* JFTabBar.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -804,6 +809,7 @@
 				299324F31DFFD8BA00B58883 /* VenueListController.swift */,
 				299324F51DFFE51600B58883 /* TopicListCotroller.swift */,
 				299324F91E02216D00B58883 /* MyProfileController.swift */,
+				299325021E04147000B58883 /* BaseTabBarController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1341,12 +1347,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299325031E04147000B58883 /* BaseTabBarController.swift in Sources */,
 				2904A0661DF5A3E100730386 /* BaseColectionView.swift in Sources */,
 				291486871DC0F21300C6DC4A /* ,.swift in Sources */,
 				29D353971DF95BB900255B57 /* UIView+WebCacheOperation.m in Sources */,
 				299324F21DFFCE5D00B58883 /* CommentBean.swift in Sources */,
 				29CC62571DF59D2100FF9F07 /* BaseController.swift in Sources */,
 				299324E31DFD1D5800B58883 /* BaseTableView.swift in Sources */,
+				299325011E0411F700B58883 /* JFTabBar.swift in Sources */,
 				299324361DF973B100B58883 /* MJRefreshBackStateFooter.m in Sources */,
 				299324FA1E02216D00B58883 /* MyProfileController.swift in Sources */,
 				29CC62441DF3EF9200FF9F07 /* JFNewFeatureCell.swift in Sources */,

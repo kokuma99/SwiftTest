@@ -27,7 +27,7 @@ class MyProfileController: UIViewController {
     func prepareUI() {
         self.view.addSubview(avatarGroupView)
         avatarGroupView.snp_makeConstraints { (make) in
-            make.top.equalTo(0)
+            make.top.equalTo(64)
             make.left.equalTo(0)
             make.right.equalTo(0)
             make.height.equalTo(AVATAR_HEIGHT + 30)
@@ -41,7 +41,7 @@ class MyProfileController: UIViewController {
             itemView.addGestureRecognizer(tap)
             self.view.addSubview(itemView)
             //设置位置和宽高
-            layoutItem(i)
+            layoutItem(itemView,i)
         }
     }
     
@@ -66,8 +66,8 @@ class MyProfileController: UIViewController {
     }
     
     
-    private func layoutItem(index: Int){
-        avatarGroupView.snp_makeConstraints { (make) in
+    private func layoutItem( item: UIView,_ index: Int){
+        item.snp_makeConstraints { (make) in
             if index==4  {
                 make.top.equalTo(avatarGroupView.snp_bottom).offset(CGFloat(index) * (ITEMVIEW_HEIGHT+1)+50+10)
             }else {
@@ -91,6 +91,7 @@ class MyProfileController: UIViewController {
     
     func getItemView(icon_name: String,title: String) ->  ItemView{
         let view = ItemView()
+        view.backgroundColor = UIColor.yellowColor()
         view.data = ["icon_name":icon_name,"title":title]
         return view
     }

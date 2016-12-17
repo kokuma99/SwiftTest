@@ -49,19 +49,19 @@ class AvatarGroupView: UIView {
             // make.edges.equalTo(contentView)
             make.top.equalTo(10)
             make.left.equalTo(10)
-            make.size.equalTo(CGSize(width: ITEM_ICON_HEIGHT, height: ITEM_ICON_HEIGHT))
+            make.size.equalTo(CGSize(width: AVATAR_HEIGHT, height: AVATAR_HEIGHT))
         }
         
         
         label_title.snp_makeConstraints { (make) in
-            make.centerY.equalTo(imageView_avatar)
+            make.centerY.equalTo(imageView_avatar).offset(-10)
             make.left.equalTo(imageView_avatar.snp_right).offset(10)
         }
         
         label_content.snp_makeConstraints { (make) in
-            make.left.equalTo(label_title)
-            make.top.equalTo(label_title.snp_bottom).offset(30)
-            make.right.equalTo(-50)
+            make.left.equalTo(label_title.snp_left)
+            make.top.equalTo(label_title.snp_bottom).offset(10)
+           // make.right.equalTo(-50)
         }
     }
     
@@ -69,6 +69,7 @@ class AvatarGroupView: UIView {
     /// 图标
     lazy var imageView_avatar: UIImageView = {
         let view = getAvatarImageView()
+        view.backgroundColor = UIColor.blueColor()
         return view
     }()
     
@@ -79,7 +80,7 @@ class AvatarGroupView: UIView {
         view.backgroundColor = UIColor.clearColor()
         view.textAlignment = NSTextAlignment.Center
         view.font = UIFont.systemFontOfSize(14)
-        view.text = "草稿箱"
+        view.text = "你的名字"
         view.textColor = UIColor.colorWithHexString("#333333")
         return view
     }()

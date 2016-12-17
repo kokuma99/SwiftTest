@@ -52,7 +52,7 @@ class ItemView: UIView {
         addSubview(imageView_arrow)
         imageView_icon.snp_makeConstraints { (make) in
             // make.edges.equalTo(contentView)
-            make.top.equalTo(10)
+            make.top.equalTo(0)
             make.left.equalTo(10)
             make.size.equalTo(CGSize(width: ITEM_ICON_HEIGHT, height: ITEM_ICON_HEIGHT))
         }

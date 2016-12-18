@@ -24,6 +24,7 @@
 		291486A81DC0F21300C6DC4A /* Test1026UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291486A71DC0F21300C6DC4A /* Test1026UITests.swift */; };
 		291486D11DC377AE00C6DC4A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291486C41DC3772E00C6DC4A /* SnapKit.framework */; };
 		291486D21DC377AE00C6DC4A /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291486C41DC3772E00C6DC4A /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2922AA661E0619BA00CAFDD4 /* TelInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922AA651E0619BA00CAFDD4 /* TelInputView.swift */; };
 		2953982A1DC4E51200E21A5C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295398171DC4E4E400E21A5C /* Alamofire.framework */; };
 		2953982B1DC4E51200E21A5C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 295398171DC4E4E400E21A5C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29822EE61DCEF28100495220 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29822EE51DCEF28100495220 /* Api.swift */; };
@@ -71,6 +72,7 @@
 		299324FF1E02E14100B58883 /* AvatarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299324FE1E02E14100B58883 /* AvatarGroupView.swift */; };
 		299325011E0411F700B58883 /* JFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299325001E0411F700B58883 /* JFTabBar.swift */; };
 		299325031E04147000B58883 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299325021E04147000B58883 /* BaseTabBarController.swift */; };
+		29BF4C3D1E0630C500649BCB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4C3C1E0630C500649BCB /* LoginController.swift */; };
 		29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62081DF1A80D00FF9F07 /* AcgBean.swift */; };
 		29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC62191DF1ABFC00FF9F07 /* Config.swift */; };
 		29CC62231DF1AD4700FF9F07 /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */; };
@@ -394,6 +396,7 @@
 		291486A91DC0F21300C6DC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		291486B81DC3743600C6DC4A /* project.pbxproj */ = {isa = PBXFileReference; lastKnownFileType = text.pbxproject; name = project.pbxproj; path = Test1026.xcodeproj/project.pbxproj; sourceTree = "<group>"; };
 		291486B91DC3772E00C6DC4A /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../Downloads/SnapKit-0.22.0/SnapKit.xcodeproj"; sourceTree = "<group>"; };
+		2922AA651E0619BA00CAFDD4 /* TelInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelInputView.swift; sourceTree = "<group>"; };
 		2953980B1DC4E4E400E21A5C /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "/Users/kokuma/Documents/../Downloads/Alamofire-3.5.0/Alamofire.xcodeproj"; sourceTree = "<absolute>"; };
 		29822EE51DCEF28100495220 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		29822EF51DD21C6B00495220 /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View1.xib; sourceTree = "<group>"; };
@@ -458,6 +461,7 @@
 		299324FE1E02E14100B58883 /* AvatarGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarGroupView.swift; sourceTree = "<group>"; };
 		299325001E0411F700B58883 /* JFTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFTabBar.swift; sourceTree = "<group>"; };
 		299325021E04147000B58883 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		29BF4C3C1E0630C500649BCB /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		29CC62081DF1A80D00FF9F07 /* AcgBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcgBean.swift; sourceTree = "<group>"; };
 		29CC62191DF1ABFC00FF9F07 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		29CC621C1DF1AD4700FF9F07 /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
@@ -656,6 +660,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2922AA511E06192500CAFDD4 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				2922AA651E0619BA00CAFDD4 /* TelInputView.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		2953980C1DC4E4E400E21A5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +685,7 @@
 		29822EF41DD21AF000495220 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				2922AA511E06192500CAFDD4 /* login */,
 				299324FB1E02C56600B58883 /* profiles */,
 				29E632D61DDCA54A00F97BD1 /* item */,
 				29822EF71DD21D0300495220 /* PersonalPlanList.swift */,
@@ -810,6 +823,7 @@
 				299324F51DFFE51600B58883 /* TopicListCotroller.swift */,
 				299324F91E02216D00B58883 /* MyProfileController.swift */,
 				299325021E04147000B58883 /* BaseTabBarController.swift */,
+				29BF4C3C1E0630C500649BCB /* LoginController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1423,6 +1437,8 @@
 				299324E51DFD7DF400B58883 /* VenueCell.swift in Sources */,
 				299324371DF973B100B58883 /* MJRefreshGifHeader.m in Sources */,
 				299324DD1DFCED6600B58883 /* OpenAccountBean.swift in Sources */,
+				2922AA661E0619BA00CAFDD4 /* TelInputView.swift in Sources */,
+				29BF4C3D1E0630C500649BCB /* LoginController.swift in Sources */,
 				29CC62251DF1AD4700FF9F07 /* StringExtension.swift in Sources */,
 				29E092F11DEF1B5E00767BEE /* DynamicBean.swift in Sources */,
 				299324E11DFCF7EF00B58883 /* PictureBean.swift in Sources */,

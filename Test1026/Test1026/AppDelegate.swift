@@ -11,6 +11,8 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var token : String?
     var networkState = 0
     var window: UIWindow?
     /**

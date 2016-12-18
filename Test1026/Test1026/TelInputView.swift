@@ -1,13 +1,15 @@
-//  ItemView.swift
+//
+//  TelInputView.swift
 //  Test1026
 //
-//  Created by kokuma on 16/10/26.
+//  Created by kokuma on 2016/12/18.
 //  Copyright © 2016年 kokuma. All rights reserved.
 //
 
+
 import UIKit
 
-class ItemView: UIView {
+class TelInputView: UIView {
     
     // MARK: 属性
     var data: [String : String]? {
@@ -49,7 +51,7 @@ class ItemView: UIView {
         
         addSubview(imageView_icon)
         addSubview(label_title)
-        addSubview(imageView_arrow)
+       
         imageView_icon.snp_makeConstraints { (make) in
             // make.edges.equalTo(contentView)
             make.centerY.equalTo(0)
@@ -62,21 +64,8 @@ class ItemView: UIView {
             make.centerY.equalTo(imageView_icon)
             make.left.equalTo(imageView_icon.snp_right).offset(10)
         }
-        
-        imageView_arrow.snp_makeConstraints { (make) in
-            make.centerY.equalTo(imageView_icon)
-            make.right.equalTo(-10)
-            make.size.equalTo(CGSize(width: ITEM_ICON_HEIGHT, height: ITEM_ICON_HEIGHT))
-        }
+      
     }
-    
-    
-    /// 右侧箭头
-    lazy var imageView_arrow: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "right_more")
-        return view
-    }()
     
     /// 图标
     lazy var imageView_icon: UIImageView = {

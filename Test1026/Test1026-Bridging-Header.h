@@ -7,5 +7,5 @@
 //#import "YYWebImage.h"
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
-
+#import <CommonCrypto/CommonDigest.h>
 //#endif

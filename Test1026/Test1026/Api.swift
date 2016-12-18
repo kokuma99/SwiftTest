@@ -40,4 +40,5 @@ let DYNAMICS = "/dynamic" //获取动态，专题"positive", "4"
 
 let DYNAMICS_ONE = "/dynamic/"  //获取一个动态的信息(不需要token,可以要openAccountId)
 
+let LOGIN = "/newAccounts/token"  //登陆，需要mobile 和loginPW
 

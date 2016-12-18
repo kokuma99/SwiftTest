@@ -13,7 +13,7 @@ import Alamofire
 /// 网络请求回调
 typealias NetworkFinished = (success: Bool, result: JSON?, error: NSError?) -> ()
 
-class NetUtils: NSObject {
+ class NetUtils: NSObject {
     
     /// 网络工具类单例
     static let shareNetUtils = NetUtils()
@@ -29,7 +29,7 @@ extension NetUtils {
      - parameter parameters: 参数
      - parameter finished:   完成回调
      */
-    func get(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
+     func get(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
         
         print("\(API_BASE_URL)\(APIString)")
         Alamofire.request(.GET, "\(API_BASE_URL)\(APIString)", parameters: parameters).responseJSON { (response) -> Void in
@@ -56,19 +56,19 @@ extension NetUtils {
     func post(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
         
         print("\(API_BASE_URL)\(APIString)")
-        Alamofire.request(.POST, "\(API_BASE_URL)\(APIString)", parameters: parameters).responseJSON { (response) -> Void in
+        Alamofire.request(.POST, "\(API_BASE_URL)\(APIString)", parameters: parameters, encoding: ParameterEncoding.JSON).responseJSON { (response) -> Void in
             
             if let data = response.data {
                 let json = JSON(data: data)
-                // print(json)
+                 print(json)
                 finished(success: true, result: json, error: nil)
             } else {
                 // JFProgressHUD.showInfoWithStatus("您的网络不给力哦")
                 finished(success: false, result: nil, error: response.result.error)
             }
         }
-    }
-    
+            }
+
     /**
      带token的GET请求
      
@@ -76,7 +76,7 @@ extension NetUtils {
      - parameter parameters: 参数
      - parameter finished:   完成回调
      */
-    func getWithToken(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
+     func getWithToken(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
         
         //        guard let token = JFAccountModel.shareAccount()?.token else {
         //            return
@@ -110,7 +110,7 @@ extension NetUtils {
      -Alamofire.request("https://httpbin.org/post", method: .post, parameters: parameters, encoding: JSONEncoding(options: []))
      -// HTTP body: {"foo": [1, 2, 3], "bar": {"baz": "qux"}}
      */
-    func postWithToken(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
+     func postWithToken(APIString: String, parameters: [String : AnyObject]?, finished: NetworkFinished) {
         
         //        guard let token = JFAccountModel.shareAccount()?.token else {
         //            return
@@ -351,30 +351,22 @@ extension NetUtils {
 extension NetUtils {
     
     /**
-     提交反馈信息
-     
+     登陆
      - parameter contact:  联系方式
-     - parameter content:  反馈内容
+     - parameter content:  密码
      - parameter finished: 完成回调
      */
-    func postFeedback(contact: String, content: String, finished: NetworkFinished) {
+    func login(mobile: String, loginPwd: String, finished: NetworkFinished) {
         
         let parameters: [String : AnyObject] = [
-            "contact" : contact,
-            "content" : content
+            "mobile" : mobile,
+            "loginPwd" : loginPwd
         ]
         
-        //  post(POST_FEEDBACK, parameters: parameters, finished: finished)
+        post(LOGIN, parameters: parameters, finished: finished)
     }
     
-    /**
-     获取播放节点
-     
-     - parameter finished: 完成回调
-     */
-    func getPlayNode(finished: NetworkFinished) {
-        //  get(GET_PALY_NODE, parameters: nil, finished: finished)
-    }
+   
 }
 
 // MARK: - 辅助方法

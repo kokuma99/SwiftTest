@@ -110,7 +110,7 @@ extension BaseTabBarController: JFTabBarDelegate {
      */
     func didTappedAddButton() {
         
-          let publishVc = UINavigationController(rootViewController: TopicListCotroller())
+          let publishVc = UINavigationController(rootViewController: LoginController())
         //  let loginVc = JFNavigationController(rootViewController: JFLoginViewController(nibName: "JFLoginViewController", bundle: nil))
         //  let vc = JFAccountModel.isLogin() ? publishVc : loginVc
          presentViewController(publishVc, animated: true, completion: nil)

@@ -252,6 +252,17 @@ func getJson(jsonPath: String) -> JSON? {
     return nil
 }
 
+func changeBottonState(ableGo : Bool,_ commitButton: UIButton){
+    if ableGo {
+        commitButton.enabled = true
+        commitButton.backgroundColor = UIColor(red:0.871, green:0.259, blue:0.294, alpha:1)
+    } else
+    {
+        commitButton.enabled = false
+        commitButton.backgroundColor = UIColor(red:0.733, green:0.733, blue:0.733, alpha:1)
+    }
+    
+}
 //设置布局match parent
 func setMatchParent(v : UIView,_ top: Int,_ margin_L_R: Int){
     v.snp_makeConstraints { (make) in

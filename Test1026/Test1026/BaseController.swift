@@ -35,11 +35,6 @@ class BaseController: UIViewController {
       //  topScrollView?.adjustWhenControllerViewWillAppera()
     }
     
-    func test(){
-        var a:  Array<String>
-        var b:  NSArray
-    }
-    
     
     /**
      准备UI

@@ -94,9 +94,22 @@ class OpenAccountBean : NSObject, NSCoding {
         // 保存到内存中
         OpenAccountBean.userAccount = self
         // 归档用户信息 
-        saveAccount() }
+        saveAccount()
+    }
+    
+    static func shareAccount() -> OpenAccountBean? {
+        if userAccount == nil {
+            userAccount = NSKeyedUnarchiver.unarchiveObjectWithFile(accountPath) as? OpenAccountBean
+        }
+        if userAccount == nil {
+            // 说明没有登录 
+            return nil } else {
+            // 这里还需要验证账号是否有效 
+            return userAccount }
+        }
+    
     /// 归档账号的路径
-    static let accountPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).last! + "/Account.plist"
+    static let accountPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).last! + "/OpenAccountBean.plist"
     // MARK: - 保存对象
     func saveAccount() { NSKeyedArchiver.archiveRootObject(self, toFile: OpenAccountBean.accountPath) }
         

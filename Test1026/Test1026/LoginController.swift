@@ -55,7 +55,7 @@ class LoginController: UIViewController {
         let data = result.object as? OpenAccountBean
          let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
           appDelegate.token = data?.token
-          OpenAccountBean.saveAccount(data!)
+          data!.saveAccount()
         }
     }
     

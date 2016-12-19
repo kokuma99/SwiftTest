@@ -108,6 +108,14 @@
 		29D353951DF95BB900255B57 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D353831DF95BB900255B57 /* UIImageView+HighlightedWebCache.m */; };
 		29D353961DF95BB900255B57 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D353851DF95BB900255B57 /* UIImageView+WebCache.m */; };
 		29D353971DF95BB900255B57 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D353871DF95BB900255B57 /* UIView+WebCacheOperation.m */; };
+		29DFAA6E1E08047300983218 /* SaveUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA6D1E08047200983218 /* SaveUtils.swift */; };
+		29DFAA771E08234100983218 /* JFPhotoBrowserDismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA711E08234100983218 /* JFPhotoBrowserDismissAnimation.swift */; };
+		29DFAA781E08234100983218 /* JFPhotoBrowserModalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA721E08234100983218 /* JFPhotoBrowserModalAnimation.swift */; };
+		29DFAA791E08234100983218 /* JFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA731E08234100983218 /* JFImageView.swift */; };
+		29DFAA7A1E08234100983218 /* JFPhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA741E08234100983218 /* JFPhotoBrowserCell.swift */; };
+		29DFAA7B1E08234100983218 /* JFPhotoBrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA751E08234100983218 /* JFPhotoBrowserModel.swift */; };
+		29DFAA7C1E08234100983218 /* JFPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA761E08234100983218 /* JFPhotoBrowserViewController.swift */; };
+		29DFAA7F1E08235100983218 /* JFPhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA7E1E08235100983218 /* JFPhotoSelectorViewController.swift */; };
 		29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0883D1DEDC7B600767BEE /* OcFile.m */; };
 		29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E088581DEDD02B00767BEE /* SVIndefiniteAnimatedView.m */; };
 		29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0885A1DEDD02B00767BEE /* SVProgressAnimatedView.m */; };
@@ -512,6 +520,14 @@
 		29D353851DF95BB900255B57 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		29D353861DF95BB900255B57 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		29D353871DF95BB900255B57 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		29DFAA6D1E08047200983218 /* SaveUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveUtils.swift; sourceTree = "<group>"; };
+		29DFAA711E08234100983218 /* JFPhotoBrowserDismissAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserDismissAnimation.swift; sourceTree = "<group>"; };
+		29DFAA721E08234100983218 /* JFPhotoBrowserModalAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserModalAnimation.swift; sourceTree = "<group>"; };
+		29DFAA731E08234100983218 /* JFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFImageView.swift; sourceTree = "<group>"; };
+		29DFAA741E08234100983218 /* JFPhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserCell.swift; sourceTree = "<group>"; };
+		29DFAA751E08234100983218 /* JFPhotoBrowserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserModel.swift; sourceTree = "<group>"; };
+		29DFAA761E08234100983218 /* JFPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		29DFAA7E1E08235100983218 /* JFPhotoSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoSelectorViewController.swift; sourceTree = "<group>"; };
 		29E0883C1DEDC7B600767BEE /* Test1026-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test1026-Bridging-Header.h"; sourceTree = "<group>"; };
 		29E0883D1DEDC7B600767BEE /* OcFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcFile.m; sourceTree = "<group>"; };
 		29E088571DEDD02B00767BEE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -604,6 +620,9 @@
 		291486831DC0F21300C6DC4A /* Test1026 */ = {
 			isa = PBXGroup;
 			children = (
+				29DFAA7D1E08235100983218 /* PhotoSelector */,
+				29DFAA6F1E08234100983218 /* PhotoBrowser */,
+				29DFAA591E0802ED00983218 /* utils */,
 				299324E81DFEE79C00B58883 /* controllers */,
 				2993243F1DF97F5400B58883 /* SQLite */,
 				299323FF1DF96F3900B58883 /* MJRefresh */,
@@ -953,6 +972,45 @@
 			children = (
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		29DFAA591E0802ED00983218 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				29DFAA6D1E08047200983218 /* SaveUtils.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		29DFAA6F1E08234100983218 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				29DFAA701E08234100983218 /* Animation */,
+				29DFAA731E08234100983218 /* JFImageView.swift */,
+				29DFAA741E08234100983218 /* JFPhotoBrowserCell.swift */,
+				29DFAA751E08234100983218 /* JFPhotoBrowserModel.swift */,
+				29DFAA761E08234100983218 /* JFPhotoBrowserViewController.swift */,
+			);
+			name = PhotoBrowser;
+			path = "../../../360云盘/swift/外语学习app/Vendor/PhotoBrowser";
+			sourceTree = "<group>";
+		};
+		29DFAA701E08234100983218 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				29DFAA711E08234100983218 /* JFPhotoBrowserDismissAnimation.swift */,
+				29DFAA721E08234100983218 /* JFPhotoBrowserModalAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		29DFAA7D1E08235100983218 /* PhotoSelector */ = {
+			isa = PBXGroup;
+			children = (
+				29DFAA7E1E08235100983218 /* JFPhotoSelectorViewController.swift */,
+			);
+			name = PhotoSelector;
+			path = "../../../360云盘/swift/外语学习app/Vendor/PhotoSelector";
 			sourceTree = "<group>";
 		};
 		29E088561DEDD02B00767BEE /* SVProgressHUD */ = {
@@ -1363,6 +1421,7 @@
 			files = (
 				299325031E04147000B58883 /* BaseTabBarController.swift in Sources */,
 				2904A0661DF5A3E100730386 /* BaseColectionView.swift in Sources */,
+				29DFAA7A1E08234100983218 /* JFPhotoBrowserCell.swift in Sources */,
 				291486871DC0F21300C6DC4A /* ,.swift in Sources */,
 				29D353971DF95BB900255B57 /* UIView+WebCacheOperation.m in Sources */,
 				299324F21DFFCE5D00B58883 /* CommentBean.swift in Sources */,
@@ -1376,6 +1435,8 @@
 				29CC622B1DF1B07A00FF9F07 /* NetUtils.swift in Sources */,
 				299324DF1DFCF23600B58883 /* DynamicExtrasBean.swift in Sources */,
 				299324EA1DFEE9CB00B58883 /* UserListController.swift in Sources */,
+				29DFAA781E08234100983218 /* JFPhotoBrowserModalAnimation.swift in Sources */,
+				29DFAA7B1E08234100983218 /* JFPhotoBrowserModel.swift in Sources */,
 				299324FD1E02C59800B58883 /* ItemView.swift in Sources */,
 				299324391DF973B100B58883 /* MJRefreshStateHeader.m in Sources */,
 				2993243C1DF973B100B58883 /* UIScrollView+MJExtension.m in Sources */,
@@ -1386,6 +1447,7 @@
 				29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */,
 				299324EC1DFFB68500B58883 /* AcgListController.swift in Sources */,
 				29D353921DF95BB900255B57 /* UIButton+WebCache.m in Sources */,
+				29DFAA771E08234100983218 /* JFPhotoBrowserDismissAnimation.swift in Sources */,
 				29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */,
 				29E092EE1DEEF3A500767BEE /* SwiftyJSON.swift in Sources */,
 				29D353891DF95BB900255B57 /* README.md in Sources */,
@@ -1402,6 +1464,7 @@
 				29D3538C1DF95BB900255B57 /* SDWebImageCompat.m in Sources */,
 				299324351DF973B100B58883 /* MJRefreshBackNormalFooter.m in Sources */,
 				299324F61DFFE51600B58883 /* TopicListCotroller.swift in Sources */,
+				29DFAA7C1E08234100983218 /* JFPhotoBrowserViewController.swift in Sources */,
 				299324FF1E02E14100B58883 /* AvatarGroupView.swift in Sources */,
 				29D3538E1DF95BB900255B57 /* SDWebImageDownloader.m in Sources */,
 				29D353951DF95BB900255B57 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1431,6 +1494,7 @@
 				299324D71DFA4A8200B58883 /* SqlUtils.swift in Sources */,
 				2993242F1DF973B100B58883 /* MJRefreshFooter.m in Sources */,
 				29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */,
+				29DFAA6E1E08047300983218 /* SaveUtils.swift in Sources */,
 				2993243B1DF973B100B58883 /* MJRefreshConst.m in Sources */,
 				29CC62291DF1AD4700FF9F07 /* UIViewExtension.swift in Sources */,
 				29CC62351DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift in Sources */,
@@ -1443,7 +1507,9 @@
 				29E092F11DEF1B5E00767BEE /* DynamicBean.swift in Sources */,
 				299324E11DFCF7EF00B58883 /* PictureBean.swift in Sources */,
 				299324301DF973B100B58883 /* MJRefreshHeader.m in Sources */,
+				29DFAA7F1E08235100983218 /* JFPhotoSelectorViewController.swift in Sources */,
 				29E632F61DDFF22100F97BD1 /* ImgWithTxtView.swift in Sources */,
+				29DFAA791E08234100983218 /* JFImageView.swift in Sources */,
 				299324311DF973B100B58883 /* MJRefreshAutoGifFooter.m in Sources */,
 				2993243E1DF973B100B58883 /* UIView+MJExtension.m in Sources */,
 				29D353961DF95BB900255B57 /* UIImageView+WebCache.m in Sources */,

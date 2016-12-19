@@ -60,7 +60,7 @@ class ViewController: UIViewController {
        //getAcg()
         //toFutureController()
         
-                    //SVProgressHUD.show()
+                   // SVProgressHUD.show()
     }
     
     func getAcg() {

@@ -51,6 +51,7 @@ class BaseTabBarController: UITabBarController {
         childViewController.tabBarItem.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFontOfSize(12)], forState: UIControlState.Normal)
         childViewController.tabBarItem.image = UIImage(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
         childViewController.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.imageWithRenderingMode(.AlwaysOriginal)
+        //childViewController.tabBarItem.add
         let navigationC = UINavigationController(rootViewController: childViewController)
         addChildViewController(navigationC)
     }
@@ -110,7 +111,7 @@ extension BaseTabBarController: JFTabBarDelegate {
      */
     func didTappedAddButton() {
         
-          let publishVc = UINavigationController(rootViewController: LoginController())
+          let publishVc = UINavigationController(rootViewController: JFNewFeatureViewController())
         //  let loginVc = JFNavigationController(rootViewController: JFLoginViewController(nibName: "JFLoginViewController", bundle: nil))
         //  let vc = JFAccountModel.isLogin() ? publishVc : loginVc
          presentViewController(publishVc, animated: true, completion: nil)

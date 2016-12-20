@@ -50,7 +50,7 @@ class JFNewFeatureCell: UICollectionViewCell {
         // 添加子控件
         contentView.addSubview(backgroundImageView)
         contentView.addSubview(startButton)
-        
+        startButton.hidden = true
         // 添加约束
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         startButton.translatesAutoresizingMaskIntoConstraints = false

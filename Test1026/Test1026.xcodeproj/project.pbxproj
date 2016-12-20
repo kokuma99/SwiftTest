@@ -116,6 +116,10 @@
 		29DFAA7B1E08234100983218 /* JFPhotoBrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA751E08234100983218 /* JFPhotoBrowserModel.swift */; };
 		29DFAA7C1E08234100983218 /* JFPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA761E08234100983218 /* JFPhotoBrowserViewController.swift */; };
 		29DFAA7F1E08235100983218 /* JFPhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA7E1E08235100983218 /* JFPhotoSelectorViewController.swift */; };
+		29DFAA811E08EF3B00983218 /* JFTopLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA801E08EF3B00983218 /* JFTopLabel.swift */; };
+		29DFAA861E08F12E00983218 /* ScrollTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA851E08F12E00983218 /* ScrollTabView.swift */; };
+		29DFAA881E08F2BD00983218 /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA871E08F2BD00983218 /* PageScrollView.swift */; };
+		29DFAA8C1E097A0700983218 /* AniUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA8B1E097A0700983218 /* AniUtils.swift */; };
 		29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0883D1DEDC7B600767BEE /* OcFile.m */; };
 		29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E088581DEDD02B00767BEE /* SVIndefiniteAnimatedView.m */; };
 		29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0885A1DEDD02B00767BEE /* SVProgressAnimatedView.m */; };
@@ -528,6 +532,10 @@
 		29DFAA751E08234100983218 /* JFPhotoBrowserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserModel.swift; sourceTree = "<group>"; };
 		29DFAA761E08234100983218 /* JFPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		29DFAA7E1E08235100983218 /* JFPhotoSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPhotoSelectorViewController.swift; sourceTree = "<group>"; };
+		29DFAA801E08EF3B00983218 /* JFTopLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JFTopLabel.swift; path = "../../../Downloads/LiuAGeIOS-master/LiuAGeIOS/LiuAGeIOS/Classes/Module/News/View/List/JFTopLabel.swift"; sourceTree = "<group>"; };
+		29DFAA851E08F12E00983218 /* ScrollTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTabView.swift; sourceTree = "<group>"; };
+		29DFAA871E08F2BD00983218 /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
+		29DFAA8B1E097A0700983218 /* AniUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AniUtils.swift; sourceTree = "<group>"; };
 		29E0883C1DEDC7B600767BEE /* Test1026-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test1026-Bridging-Header.h"; sourceTree = "<group>"; };
 		29E0883D1DEDC7B600767BEE /* OcFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcFile.m; sourceTree = "<group>"; };
 		29E088571DEDD02B00767BEE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -628,13 +636,13 @@
 				299323FF1DF96F3900B58883 /* MJRefresh */,
 				29D353981DF95CB800255B57 /* SDWebImage */,
 				29D353671DF95BB900255B57 /* SDWebImage */,
-				29CC62341DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift */,
 				29CC621B1DF1AD0C00FF9F07 /* extensions */,
 				29E092EF1DEF1B2E00767BEE /* bean */,
 				29E092ED1DEEF3A500767BEE /* SwiftyJSON.swift */,
 				29E088561DEDD02B00767BEE /* SVProgressHUD */,
 				29822EF41DD21AF000495220 /* views */,
 				291486841DC0F21300C6DC4A /* AppDelegate.swift */,
+				29CC62341DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift */,
 				291486881DC0F21300C6DC4A /* Main.storyboard */,
 				2914868E1DC0F21300C6DC4A /* Assets.xcassets */,
 				291486901DC0F21300C6DC4A /* LaunchScreen.storyboard */,
@@ -704,12 +712,13 @@
 		29822EF41DD21AF000495220 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				29DFAA841E08F0F400983218 /* common */,
+				29DFAA831E08EF8F00983218 /* vendor */,
 				2922AA511E06192500CAFDD4 /* login */,
 				299324FB1E02C56600B58883 /* profiles */,
 				29E632D61DDCA54A00F97BD1 /* item */,
 				29822EF71DD21D0300495220 /* PersonalPlanList.swift */,
 				29D353651DF9513D00255B57 /* baseCustoms */,
-				299325001E0411F700B58883 /* JFTabBar.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -978,6 +987,7 @@
 			isa = PBXGroup;
 			children = (
 				29DFAA6D1E08047200983218 /* SaveUtils.swift */,
+				29DFAA8B1E097A0700983218 /* AniUtils.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -1011,6 +1021,24 @@
 			);
 			name = PhotoSelector;
 			path = "../../../360云盘/swift/外语学习app/Vendor/PhotoSelector";
+			sourceTree = "<group>";
+		};
+		29DFAA831E08EF8F00983218 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				29DFAA801E08EF3B00983218 /* JFTopLabel.swift */,
+				299325001E0411F700B58883 /* JFTabBar.swift */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		29DFAA841E08F0F400983218 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				29DFAA851E08F12E00983218 /* ScrollTabView.swift */,
+				29DFAA871E08F2BD00983218 /* PageScrollView.swift */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 		29E088561DEDD02B00767BEE /* SVProgressHUD */ = {
@@ -1425,6 +1453,7 @@
 				291486871DC0F21300C6DC4A /* ,.swift in Sources */,
 				29D353971DF95BB900255B57 /* UIView+WebCacheOperation.m in Sources */,
 				299324F21DFFCE5D00B58883 /* CommentBean.swift in Sources */,
+				29DFAA8C1E097A0700983218 /* AniUtils.swift in Sources */,
 				29CC62571DF59D2100FF9F07 /* BaseController.swift in Sources */,
 				299324E31DFD1D5800B58883 /* BaseTableView.swift in Sources */,
 				299325011E0411F700B58883 /* JFTabBar.swift in Sources */,
@@ -1471,6 +1500,7 @@
 				29D3538F1DF95BB900255B57 /* SDWebImageDownloaderOperation.m in Sources */,
 				2993242D1DF973B100B58883 /* MJRefreshBackFooter.m in Sources */,
 				29D3538D1DF95BB900255B57 /* SDWebImageDecoder.m in Sources */,
+				29DFAA881E08F2BD00983218 /* PageScrollView.swift in Sources */,
 				29D353901DF95BB900255B57 /* SDWebImageManager.m in Sources */,
 				29CC62091DF1A80D00FF9F07 /* AcgBean.swift in Sources */,
 				29CC62241DF1AD4700FF9F07 /* NSDateExtension.swift in Sources */,
@@ -1496,8 +1526,10 @@
 				29CC621A1DF1ABFC00FF9F07 /* Config.swift in Sources */,
 				29DFAA6E1E08047300983218 /* SaveUtils.swift in Sources */,
 				2993243B1DF973B100B58883 /* MJRefreshConst.m in Sources */,
+				29DFAA861E08F12E00983218 /* ScrollTabView.swift in Sources */,
 				29CC62291DF1AD4700FF9F07 /* UIViewExtension.swift in Sources */,
 				29CC62351DF3EF4A00FF9F07 /* JFNewFeatureViewController.swift in Sources */,
+				29DFAA811E08EF3B00983218 /* JFTopLabel.swift in Sources */,
 				299324E51DFD7DF400B58883 /* VenueCell.swift in Sources */,
 				299324371DF973B100B58883 /* MJRefreshGifHeader.m in Sources */,
 				299324DD1DFCED6600B58883 /* OpenAccountBean.swift in Sources */,

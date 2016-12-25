@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func didTapped(){
-        toController(BaseTabBarController())
+        toController(SearchAllController())
        //getAcg()
         //toFutureController()
         

@@ -18,10 +18,18 @@ class UserListController : BaseController {
           setMatchParent(listV!, 0, 10)
     }
    
-    override func loadData() {
-        getUsers { 
-            self.listV?.data = self.data
-            self.listV?.reloadData()
-        }
+     override func loadData() {
+        if keyword == nil {
+            getUsers {
+                self.listV?.data = self.data
+                self.listV?.reloadData()
+            }
+            
+        }else{
+            getUsers2 {
+                self.listV?.data = self.data
+                self.listV?.reloadData()
+            }
+       }
     }
 }

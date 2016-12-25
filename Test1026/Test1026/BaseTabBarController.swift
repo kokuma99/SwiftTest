@@ -27,7 +27,7 @@ class BaseTabBarController: UITabBarController {
         let newVc2 = AcgListController()
         configChildViewController(newVc2, title: "分类", imageName: "tab_classify_n", selectedImageName: "tab_classify_h")
         
-        let newVc3 = VenueListController()
+        let newVc3 = VenueListController(keyword: "")
         configChildViewController(newVc3, title: "消息", imageName: "tab_msg_n", selectedImageName: "tab_msg_h")
         
         let newVc4 = MyProfileController()
@@ -52,8 +52,10 @@ class BaseTabBarController: UITabBarController {
         childViewController.tabBarItem.image = UIImage(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
         childViewController.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.imageWithRenderingMode(.AlwaysOriginal)
         //childViewController.tabBarItem.add
+        
         let navigationC = UINavigationController(rootViewController: childViewController)
         addChildViewController(navigationC)
+       
     }
     
     /**

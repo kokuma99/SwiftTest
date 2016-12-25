@@ -14,7 +14,11 @@ import SnapKit
 typealias GetDataFinished = () -> ()
 class BaseController: UIViewController {
     
+    
+    var page : Int = 1
     var data = [NSObject]()
+    var keyword : String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +57,8 @@ class BaseController: UIViewController {
     }
     
     func getDynamic_top(finished : GetDataFinished) {
-        NetUtils.shareNetUtils.getTopicsByKeyword("",page: "1") { (success, result, error) in
+        let key = keyword==nil ? "" : keyword
+        NetUtils.shareNetUtils.getTopicsByKeyword(key!,page: "\(page)") { (success, result, error) in
             guard let result=result else {
                 return
             }
@@ -68,7 +73,8 @@ class BaseController: UIViewController {
     }
     
     func getAcg(finished : GetDataFinished) {
-        NetUtils.shareNetUtils.getAcgs("1") { (success, result, error) in
+        let key = keyword==nil ? "" : keyword
+        NetUtils.shareNetUtils.getAcgsByKeyword(key!, page: "\(page)") { (success, result, error) in
             guard let result=result else {
                 return
             }
@@ -82,7 +88,8 @@ class BaseController: UIViewController {
         }
     }
     func getVenue(finished : GetDataFinished) {
-        NetUtils.shareNetUtils.getVenuesByKeyword("", page: "1") { (success, result, error) in
+        let key = keyword==nil ? "" : keyword
+        NetUtils.shareNetUtils.getVenuesByKeyword(key!, page: "\(page)") { (success, result, error) in
             guard let result=result else {
                 return
             }
@@ -98,7 +105,7 @@ class BaseController: UIViewController {
     
     
     func getUsers(finished : GetDataFinished){
-        NetUtils.shareNetUtils.getRecommendUsers("1") { (success, result, error) in
+        NetUtils.shareNetUtils.getRecommendUsers("\(page)") { (success, result, error) in
             guard let result=result else {
                 return
             }
@@ -109,6 +116,22 @@ class BaseController: UIViewController {
                 //    print("\(self..last?.positive)")
             }
            finished()
+        }
+    }
+    
+    func getUsers2(finished : GetDataFinished){
+        let key = keyword==nil ? "" : keyword
+        NetUtils.shareNetUtils.getUsersByKeyword(key!, page: "\(page)"){ (success, result, error) in
+            guard let result=result else {
+                return
+            }
+            let data = result["data"].arrayObject as! [[String : AnyObject]]
+            for dict in data {
+                self.data.append(OpenAccountBean(dict : dict))
+                //  print("\(self..last?.id)")
+                //    print("\(self..last?.positive)")
+            }
+            finished()
         }
     }
     
@@ -171,4 +194,26 @@ class BaseController: UIViewController {
         return tableV
     }
     
+    //添加返回事件
+    func setBackButton(viewController: UIViewController){
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .Done, target: self, action: "back")
+    }
+    
+    //返回事件
+    func back() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    //返回事件
+    func back2() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+}
+
+extension BaseController {
+    
+    convenience init(keyword : String){
+        self.init()
+        self.keyword = keyword
+    }
 }

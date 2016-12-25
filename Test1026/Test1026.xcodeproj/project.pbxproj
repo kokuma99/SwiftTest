@@ -120,6 +120,7 @@
 		29DFAA861E08F12E00983218 /* ScrollTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA851E08F12E00983218 /* ScrollTabView.swift */; };
 		29DFAA881E08F2BD00983218 /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA871E08F2BD00983218 /* PageScrollView.swift */; };
 		29DFAA8C1E097A0700983218 /* AniUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA8B1E097A0700983218 /* AniUtils.swift */; };
+		29DFAA8E1E0DFE8400983218 /* SearchAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFAA8D1E0DFE8400983218 /* SearchAllController.swift */; };
 		29E0883E1DEDC7B600767BEE /* OcFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0883D1DEDC7B600767BEE /* OcFile.m */; };
 		29E088611DEDD02B00767BEE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E088581DEDD02B00767BEE /* SVIndefiniteAnimatedView.m */; };
 		29E088621DEDD02B00767BEE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0885A1DEDD02B00767BEE /* SVProgressAnimatedView.m */; };
@@ -536,6 +537,7 @@
 		29DFAA851E08F12E00983218 /* ScrollTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTabView.swift; sourceTree = "<group>"; };
 		29DFAA871E08F2BD00983218 /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
 		29DFAA8B1E097A0700983218 /* AniUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AniUtils.swift; sourceTree = "<group>"; };
+		29DFAA8D1E0DFE8400983218 /* SearchAllController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAllController.swift; sourceTree = "<group>"; };
 		29E0883C1DEDC7B600767BEE /* Test1026-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test1026-Bridging-Header.h"; sourceTree = "<group>"; };
 		29E0883D1DEDC7B600767BEE /* OcFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcFile.m; sourceTree = "<group>"; };
 		29E088571DEDD02B00767BEE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -713,7 +715,6 @@
 			isa = PBXGroup;
 			children = (
 				29DFAA841E08F0F400983218 /* common */,
-				29DFAA831E08EF8F00983218 /* vendor */,
 				2922AA511E06192500CAFDD4 /* login */,
 				299324FB1E02C56600B58883 /* profiles */,
 				29E632D61DDCA54A00F97BD1 /* item */,
@@ -852,6 +853,7 @@
 				299324F91E02216D00B58883 /* MyProfileController.swift */,
 				299325021E04147000B58883 /* BaseTabBarController.swift */,
 				29BF4C3C1E0630C500649BCB /* LoginController.swift */,
+				29DFAA8D1E0DFE8400983218 /* SearchAllController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1023,18 +1025,11 @@
 			path = "../../../360云盘/swift/外语学习app/Vendor/PhotoSelector";
 			sourceTree = "<group>";
 		};
-		29DFAA831E08EF8F00983218 /* vendor */ = {
-			isa = PBXGroup;
-			children = (
-				29DFAA801E08EF3B00983218 /* JFTopLabel.swift */,
-				299325001E0411F700B58883 /* JFTabBar.swift */,
-			);
-			name = vendor;
-			sourceTree = "<group>";
-		};
 		29DFAA841E08F0F400983218 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				299325001E0411F700B58883 /* JFTabBar.swift */,
+				29DFAA801E08EF3B00983218 /* JFTopLabel.swift */,
 				29DFAA851E08F12E00983218 /* ScrollTabView.swift */,
 				29DFAA871E08F2BD00983218 /* PageScrollView.swift */,
 			);
@@ -1458,6 +1453,7 @@
 				299324E31DFD1D5800B58883 /* BaseTableView.swift in Sources */,
 				299325011E0411F700B58883 /* JFTabBar.swift in Sources */,
 				299324361DF973B100B58883 /* MJRefreshBackStateFooter.m in Sources */,
+				29DFAA8E1E0DFE8400983218 /* SearchAllController.swift in Sources */,
 				299324FA1E02216D00B58883 /* MyProfileController.swift in Sources */,
 				29CC62441DF3EF9200FF9F07 /* JFNewFeatureCell.swift in Sources */,
 				299324381DF973B100B58883 /* MJRefreshNormalHeader.m in Sources */,

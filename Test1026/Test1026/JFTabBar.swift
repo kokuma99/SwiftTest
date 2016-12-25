@@ -54,11 +54,18 @@ class JFTabBar: UITabBar {
                 }
                 continue
             }
+            
+            let btn =  view as! UIControl
+            btn.addTarget(self, action: "anim:", forControlEvents: .TouchUpInside)
             let x = CGFloat(index > 1 ? index + 1 : index) * width
             view.frame = CGRect(x: x, y: y, width: width, height: height)
             index += 1
         }
         
+    }
+    
+    func anim(btn: UIControl){
+        aniDamping(btn)
     }
     
     /**

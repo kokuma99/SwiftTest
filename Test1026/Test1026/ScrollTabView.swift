@@ -47,11 +47,49 @@ class ScrollTabView: UIScrollView {
         setupColumn()
         addContent()
     }
-    
     /**
      初始化栏目
      */
     private func setupColumn() {
+                   // 默认栏目顺序 - 可以直接存plist文件
+            selectedArray = [
+                [
+                    "classid" : "0",
+                    "classname" : "今日推荐"
+                ],
+                [
+                    "classid" : "1",
+                    "classname": "奇闻异事"
+                ],
+                [
+                    "classid" : "2",
+                    "classname": "未解之谜"
+                ],
+                [
+                    "classid" : "3",
+                    "classname": "天文航天"
+                ],
+                [
+                    "classid" : "4",
+                    "classname": "UTO探索"
+                ]
+                
+                
+            ]
+            
+            
+            // 默认栏目保存
+            NSUserDefaults.standardUserDefaults().setObject(selectedArray, forKey: "selectedArray")
+            // NSUserDefaults.standardUserDefaults().setObject(optionalArray, forKey: "optionalArray")
+        
+        
+    }
+
+    
+    /**
+     初始化栏目
+     */
+    private func setupColumn2() {
         let tempSelectedArray = NSUserDefaults.standardUserDefaults().objectForKey("selectedArray") as? [[String : String]]
         // let tempOpti NSUserDefaults.standardUserDefaults().objectForKey("optionalArray") as? [[String : String]]
         
@@ -80,31 +118,9 @@ class ScrollTabView: UIScrollView {
                 [
                     "classid" : "4",
                     "classname": "UTO探索"
-                ],
-                [
-                    "classid" : "5",
-                    "classname": "神奇地球"
-                ],
-                [
-                    "classid" : "7",
-                    "classname": "震惊事件"
-                ],
-                [
-                    "classid" : "8",
-                    "classname": "迷案追踪"
-                ],
-                [
-                    "classid" : "9",
-                    "classname": "灵异恐怖"
-                ],
-                [
-                    "classid" : "10",
-                    "classname": "历史趣闻"
-                ],
-                [
-                    "classid" : "11",
-                    "classname": "军事秘闻"
                 ]
+               
+             
             ]
             
             
@@ -146,9 +162,9 @@ class ScrollTabView: UIScrollView {
             
         }
         
-        let lastLabel = subviews.last as! JFTopLabel
+        // let lastLabel = subviews.last as! JFTopLabel
         // 设置顶部标签区域滚动范围
-        self.contentSize = CGSize(width: leftMargin + lastLabel.frame.width, height: 0)
+        self.contentSize = CGSize(width: leftMargin, height: 0)
         
     }
     
@@ -167,3 +183,7 @@ class ScrollTabView: UIScrollView {
     
    
 }
+
+
+
+

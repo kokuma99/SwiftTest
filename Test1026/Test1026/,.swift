@@ -50,13 +50,19 @@ class ViewController: UIViewController {
     }
     
     private func prepareUI2(){
-        let txtView1 = UILabel(frame: CGRect(x: 20,y: 40,width: 200,height: 100))
-        txtView1.text="kokuma de su ne"
-        view.addSubview(txtView1)
+        let label = UILabel(frame: CGRect(x: 20,y: 40,width: 200,height: 200))
+        label.backgroundColor = RED
+        label.text="kokuma"
+        label.numberOfLines = 2;
+        label.textAlignment = .Right
+        label.lineBreakMode = .ByTruncatingMiddle
+        view.addSubview(label)
+        
+        //let textFiled = UITextField
     }
     
     @objc private func didTapped(){
-        toController(SearchAllController())
+        toControllerPresent(UINavigationController(rootViewController: TestScrollController()))
        //getAcg()
         //toFutureController()
         

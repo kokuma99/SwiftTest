@@ -69,7 +69,7 @@ class PageScrollView: UIScrollView {
     
 }
 
-extension PageScrollView : UIScrollViewDelegate{
+extension PageScrollView : UIScrollViewDelegate {
     // 滚动结束后触发 代码导致
     func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
         guard let topScrollView = topScrollView else{

@@ -33,7 +33,7 @@ extension NetUtils {
         
         print("\(API_BASE_URL)\(APIString)")
         Alamofire.request(.GET, "\(API_BASE_URL)\(APIString)", parameters: parameters).responseJSON { (response) -> Void in
-            
+           
             if let data = response.data {
                 let json = JSON(data: data)
                  print(json)

@@ -37,13 +37,13 @@ class SearchAllController: UIViewController {
         view.addSubview(pageScrollContainer)
         scrollBar.backgroundColor = RED
         scrollBar.snp_makeConstraints { (make) in
-            make.top.equalTo(60)
+            make.top.equalTo(22)
             make.left.equalTo(0)
             make.right.equalTo(0)
           //  make.width.equalTo(100)
             make.height.equalTo(60)
         }
-        setMatchParent(pageScrollContainer,  125, 0)
+        setMatchParent(pageScrollContainer,  85, 0)
         scrollBar.contentScrollView = pageScrollContainer
         let childs  = [UserListController(),AcgListController(),VenueListController(),TopicListCotroller(),MyProfileController()]
 //        for c in childs {

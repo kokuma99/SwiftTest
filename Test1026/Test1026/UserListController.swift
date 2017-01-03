@@ -14,13 +14,21 @@ class UserListController : BaseController {
     
     override func prepareUI() {
          listV  = getBaseTableView(UserCell.classForCoder(),height: AVATAR_HEIGHT*2)
-          self.view.addSubview(listV!)
+         listV?.mj_header = setupHeaderRefresh(self, action: "loadData")
+         listV?.mj_footer = setupFooterRefresh(self, action: #selector(loadMore))
+         self.view.addSubview(listV!)
           setMatchParent(listV!, 0, 10)
     }
    
+    func loadMore(){
+        page++;
+        loadData()
+    }
+    
      override func loadData() {
         if keyword == nil {
-            getUsers {
+            getUsers {(success,error) in
+                self.listV?.mj_footer.endRefreshing()
                 self.listV?.data = self.data
                 self.listV?.reloadData()
             }
@@ -29,6 +37,7 @@ class UserListController : BaseController {
             getUsers2 {
                 self.listV?.data = self.data
                 self.listV?.reloadData()
+                self.listV?.mj_footer.endRefreshing()
             }
        }
     }

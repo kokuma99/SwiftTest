@@ -10,7 +10,7 @@
 import UIKit
 import SnapKit
 
-
+typealias GetDataFinished2 = (success: Bool, error: NSError?) -> ()
 typealias GetDataFinished = () -> ()
 class BaseController: UIViewController {
     
@@ -104,9 +104,10 @@ class BaseController: UIViewController {
     }
     
     
-    func getUsers(finished : GetDataFinished){
+    func getUsers(finished : GetDataFinished2){
         NetUtils.shareNetUtils.getRecommendUsers("\(page)") { (success, result, error) in
             guard let result=result else {
+                finished(success: success,error: error)
                 return
             }
             let data = result["data"].arrayObject as! [[String : AnyObject]]
@@ -115,7 +116,7 @@ class BaseController: UIViewController {
                 //  print("\(self..last?.id)")
                 //    print("\(self..last?.positive)")
             }
-           finished()
+           finished(success: success,error: error)
         }
     }
     

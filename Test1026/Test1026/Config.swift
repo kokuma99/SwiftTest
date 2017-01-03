@@ -167,25 +167,25 @@ func setupButtonSpringAnimation(view: UIView) {
 /**
  快速创建上拉加载更多控件
  */
-//func setupFooterRefresh(target: AnyObject, action: Selector) -> MJRefreshFooter {
-//    let footerRefresh = MJRefreshBackNormalFooter(refreshingTarget: target, refreshingAction: action)
-//    footerRefresh.automaticallyHidden = true
-//    footerRefresh.setTitle("正在加载", forState: MJRefreshState.Refreshing)
-//    footerRefresh.setTitle("可以松开了", forState: MJRefreshState.Pulling)
-//    footerRefresh.setTitle("上拉加载更多", forState: MJRefreshState.Idle)
-//    footerRefresh.setTitle("没有啦~~~", forState: MJRefreshState.NoMoreData)
-//    return footerRefresh
-//}
+func setupFooterRefresh(target: AnyObject, action: Selector) -> MJRefreshFooter {
+    let footerRefresh = MJRefreshBackNormalFooter(refreshingTarget: target, refreshingAction: action)
+    footerRefresh.automaticallyHidden = true
+    footerRefresh.setTitle("正在加载", forState: MJRefreshState.Refreshing)
+    footerRefresh.setTitle("可以松开了", forState: MJRefreshState.Pulling)
+    footerRefresh.setTitle("上拉加载更多", forState: MJRefreshState.Idle)
+    footerRefresh.setTitle("没有啦~~~", forState: MJRefreshState.NoMoreData)
+    return footerRefresh
+}
 
 /**
  快速创建下拉加载最新控件
  */
-//func setupHeaderRefresh(target: AnyObject, action: Selector) -> MJRefreshNormalHeader {
-//    let headerRefresh = MJRefreshNormalHeader(refreshingTarget: target, refreshingAction: action)
-//    headerRefresh.lastUpdatedTimeLabel.hidden = true
-//    headerRefresh.stateLabel.hidden = true
-//    return headerRefresh
-//}
+func setupHeaderRefresh(target: AnyObject, action: Selector) -> MJRefreshNormalHeader {
+    let headerRefresh = MJRefreshNormalHeader(refreshingTarget: target, refreshingAction: action)
+    headerRefresh.lastUpdatedTimeLabel.hidden = true
+    headerRefresh.stateLabel.hidden = true
+    return headerRefresh
+}
 
 /**
  判断是否登录，如果没有登录则跳转到登录界面
@@ -278,7 +278,13 @@ func toController(targetController: UIViewController){
     let root =  UIApplication.sharedApplication().keyWindow?.rootViewController as? UINavigationController
     root?.pushViewController(targetController, animated: true)
 }
-
+//跳转至目标界面2
+func toControllerPresent(targetController: UIViewController){
+    let root =  UIApplication.sharedApplication().keyWindow?.rootViewController as? UINavigationController
+    root?.presentViewController(targetController, animated: true, completion: {
+        //
+    })
+}
 //----------------------------------------------------------------UI创建部分
 //获取内容展示标签
 func getLabelContent() -> UILabel{

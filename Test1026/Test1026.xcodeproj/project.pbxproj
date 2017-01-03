@@ -14,6 +14,9 @@
 		2904A08A1DF8363B00730386 /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904A0891DF8363B00730386 /* BaseTableCell.swift */; };
 		2904A1361DF91A1E00730386 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2904A1331DF919B600730386 /* ImageIO.framework */; };
 		2904A1371DF91A1E00730386 /* ImageIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2904A1331DF919B600730386 /* ImageIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290F70A81E17792300BF59F2 /* ScrollImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290F70A71E17792300BF59F2 /* ScrollImgView.m */; };
+		290F70BE1E178A0600BF59F2 /* CollapsingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F70BD1E178A0600BF59F2 /* CollapsingScrollView.swift */; };
+		290F70C01E1A0A9000BF59F2 /* TestScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F70BF1E1A0A9000BF59F2 /* TestScrollController.swift */; };
 		291486851DC0F21300C6DC4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291486841DC0F21300C6DC4A /* AppDelegate.swift */; };
 		291486871DC0F21300C6DC4A /* ,.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291486861DC0F21300C6DC4A /* ,.swift */; };
 		2914868A1DC0F21300C6DC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291486881DC0F21300C6DC4A /* Main.storyboard */; };
@@ -393,6 +396,10 @@
 		2904A0891DF8363B00730386 /* BaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
 		2904A1331DF919B600730386 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2904A13A1DF9368F00730386 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../Downloads/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		290F70A71E17792300BF59F2 /* ScrollImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollImgView.m; path = OCviews/ScrollImgView.m; sourceTree = "<group>"; };
+		290F70BC1E177A1200BF59F2 /* ScrollImgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollImgView.h; sourceTree = "<group>"; };
+		290F70BD1E178A0600BF59F2 /* CollapsingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsingScrollView.swift; sourceTree = "<group>"; };
+		290F70BF1E1A0A9000BF59F2 /* TestScrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScrollController.swift; sourceTree = "<group>"; };
 		291486811DC0F21300C6DC4A /* Test1026.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291486841DC0F21300C6DC4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		291486861DC0F21300C6DC4A /* ,.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ",.swift"; sourceTree = "<group>"; };
@@ -854,6 +861,7 @@
 				299325021E04147000B58883 /* BaseTabBarController.swift */,
 				29BF4C3C1E0630C500649BCB /* LoginController.swift */,
 				29DFAA8D1E0DFE8400983218 /* SearchAllController.swift */,
+				290F70BF1E1A0A9000BF59F2 /* TestScrollController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1032,6 +1040,9 @@
 				29DFAA801E08EF3B00983218 /* JFTopLabel.swift */,
 				29DFAA851E08F12E00983218 /* ScrollTabView.swift */,
 				29DFAA871E08F2BD00983218 /* PageScrollView.swift */,
+				290F70A71E17792300BF59F2 /* ScrollImgView.m */,
+				290F70BC1E177A1200BF59F2 /* ScrollImgView.h */,
+				290F70BD1E178A0600BF59F2 /* CollapsingScrollView.swift */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -1474,6 +1485,7 @@
 				29D353921DF95BB900255B57 /* UIButton+WebCache.m in Sources */,
 				29DFAA771E08234100983218 /* JFPhotoBrowserDismissAnimation.swift in Sources */,
 				29822EF81DD21D0300495220 /* PersonalPlanList.swift in Sources */,
+				290F70C01E1A0A9000BF59F2 /* TestScrollController.swift in Sources */,
 				29E092EE1DEEF3A500767BEE /* SwiftyJSON.swift in Sources */,
 				29D353891DF95BB900255B57 /* README.md in Sources */,
 				2993242E1DF973B100B58883 /* MJRefreshComponent.m in Sources */,
@@ -1481,6 +1493,7 @@
 				299324F01DFFC77C00B58883 /* CharacterSetBean.swift in Sources */,
 				29D353911DF95BB900255B57 /* SDWebImagePrefetcher.m in Sources */,
 				2904A0771DF705D900730386 /* UserCell.swift in Sources */,
+				290F70BE1E178A0600BF59F2 /* CollapsingScrollView.swift in Sources */,
 				299324DB1DFCEA4C00B58883 /* ExtBean.swift in Sources */,
 				29CC622D1DF1B96D00FF9F07 /* HotSearchBean.swift in Sources */,
 				299324EE1DFFBAA700B58883 /* AcgCell1.swift in Sources */,
@@ -1491,6 +1504,7 @@
 				299324F61DFFE51600B58883 /* TopicListCotroller.swift in Sources */,
 				29DFAA7C1E08234100983218 /* JFPhotoBrowserViewController.swift in Sources */,
 				299324FF1E02E14100B58883 /* AvatarGroupView.swift in Sources */,
+				290F70A81E17792300BF59F2 /* ScrollImgView.m in Sources */,
 				29D3538E1DF95BB900255B57 /* SDWebImageDownloader.m in Sources */,
 				29D353951DF95BB900255B57 /* UIImageView+HighlightedWebCache.m in Sources */,
 				29D3538F1DF95BB900255B57 /* SDWebImageDownloaderOperation.m in Sources */,

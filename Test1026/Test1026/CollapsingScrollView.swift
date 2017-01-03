@@ -127,16 +127,16 @@ extension CollapsingScrollView : UIScrollViewDelegate{
         scrollViewDidEndScrollingAnimation(scrollView)
     }
     
-    // 开始拖拽视图
+    // 开始拖拽视图   //到达底部为2059.0
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
         contentOffsetY = scrollView.contentOffset.y
-        print("xxl-BeginDragging-contentOffsetX-\(contentOffsetY)")
+        print("xxl-BeginDragging-contentOffsetY-\(contentOffsetY)")
     }
     
     
     // 正在滚动
     func scrollViewDidScroll(scrollView: UIScrollView) {
-         print("xxl-DidScroll-contentOffsetX-\(scrollView.contentOffset.y)")
+         print("xxl-DidScroll-contentOffsetY-\(scrollView.contentOffset.y)")
         let y = scrollView.contentOffset.y;
         if  y>=150 {
             topView.removeFromSuperview()
